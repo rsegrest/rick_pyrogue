@@ -1,3 +1,3 @@
-class Persona:
+class Potion:
     def __init__(self):
         pass
