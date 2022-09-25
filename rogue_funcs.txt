@@ -1,0 +1,643 @@
+https://www.myabandonware.com/game/rogue-4n/play-4n
+
+Decoded: Rogue (1980) by Toy, Arnold, Wichman
+DOS version (1983) by Mel Sibony and Jon Lane
+Beginner friendly, line-by-line code walkthrough by MaiZure
+
+The master list of functions in Rogue, by name and by source file
+
+FUNCTIONS BY NAME
+-----------------
+
+add_frnt [MAZE.C] -  adds a point to the potential maze frontier
+add_haste [MISC.C] - adds haste effect to the player
+add_line [THINGS.C] -  adds to discovery list
+add_pack [PACK.C] -  adds an item to inventory
+add_pass [PASSAGES.C] -  draw all the passages on the level
+add_scores [RIP.C] -  adds this score to the history
+add_str [MISC.C] -  adds to the player's strength
+addch [CURSES.C] -  prints a character to the current position
+addmsg [IO.C] -  adds formatted message to the current message
+addstr [CURSES.C] -  prints a string to the screen
+aggravate [MISC.C] -  wakes up all monsters
+attack [FIGHT.C] -  monster attacks player
+backspace [IO.C] -  executes a backspace on the screen cursor
+bdos [MACH_DEP.C] -  invokes a DOS sofware interrupt (0x21)
+be_trapped [MOVE.C] -  set off a trap on the player
+blanks [IO.C] -  pads buffer with blanks
+bload [LOAD.C] -  loads the binary data in to video memory
+blot_out [CURSES.C] -  clear a screen region
+box [CURSES.C] -  draws a box on the screen using input coordinates
+call [MISC.C] -  assigns player input string to an object
+call_it [MISC.C] -  allows player to change names of objects
+can_drop [THINGS.C] -  return true if an item can be dropped
+cansee [CHASE.C] -  checks if player can see the input coordinates
+center [CURSES.C] -  centers a string on the screen
+charge_str [STICKS.C] -  returns the text of magic charges remaining
+chase [CHASE.C] -  finds the next step during a chase
+check_level [FIGHT.C] -  checks if player levels up
+chg_str [MISC.C] -  changes player strength by an input amount
+chopmsg [THINGS.C] -  shortens an input message based on terse mode
+clear [CURSES.C] -  clears the screen
+clock_on [MACH_DEP.C] -  saves and replaces the real-time clock interrupt
+clrtoeol [CURSES.C] -  clear a row on the screen
+com_char [COMMAND.C] -  returns an escaped character and sets state
+command [COMMAND.C] -  handles input. Called every cycle of game loop
+con_frnt [MAZE.C] -  connects a frontier point with the maze
+conn [PASSAGES.C] -  draws a passageway out of a room (connects another)
+create_obj [WIZARD.C] -  creates an object out of thin air
+credits [MACH_DEP.C] -  displays the game credits
+Croot [CROOT.C] -  sets up process arguments on the heap for the game
+cursor [CURSES.C] -  turns cursor on and off
+d_level [MISC.C] -  go down a level 
+d_slot [DAEMON.C] - finds a daemon slot
+daemon [DAEMON.C] -  creates a daemon
+death [RIP.C] -  display the loss screen
+demo [RIP.C] -  prints the demo ending screen
+descend [MOVE.C] -  changes levels with an output message
+diag_ok [CHASE.C] -  checks if diagonal movement is possible
+discard [LIST.C] -  destorys an item
+discovered [THINGS.C] -  shows a list of things the player knows
+DISTANCE [MISC.C] -  returns squared Manhattan distance
+do_chase [CHASE.C] -  set one mosnter off chasing a target
+do_daemons [DAEMON.C] -  run daemons that are ready
+do_fuses [DAEMON.C] -  goes through timed daemons and decrements timers
+do_macro [MISC.C] -  allows player to define a macro
+do_motion [WEAPONS.C] -  animates projectiles
+do_move [MOVE.C] -  processes player movement, may initiate events
+do_passages [PASSAGES.C] -  creates all passages on the level
+do_rooms [ROOMS.C] -  creates all rooms, including mazes and others
+do_run [MOVE.C] - Puts player in to run mode
+do_zap [STICKS.C] -  magic attack with wand
+doadd [IO.C] -  adds a string to the end of the message buffer
+doctor [DAEMONS.C] -  healing over time daemon
+dodos [FAKEDOS.C] -  process command line input
+door [PASSAGES.C] -  opens a door
+door_open [MOVE.C] -  adds a door and possibly a secret door
+drain [STICKS.C] -  deals health damage all around, including player
+draw_maze [MAZE.C] -  draws a maze by manipulating map data in place
+draw_room [ROOMS.C] -  loads the symbols on the map as needed
+drop [THINGS.C] -  slide out screen updating animation
+drop_curtain [CURSES.C] -  player drops an item
+eat [MISC.C] -  player eats food from pack
+end_line [THINGS.C] -  ends a list with a null item
+endblk [STRINGS.C] -  nullterms the input string without a break/space
+endit [MAIN.C] -  abnormal program termination
+endmsg [IO.C] -  pushes the message buffer to the screen
+enter_room [ROOMS.C] -  updates the display when entering a room
+epyx_yuck [LOAD.C] -  show the epyx title logo
+error [CURSES.C] -  prints an error (not used)
+execcom [COMMAND.C] -  dispatches command input to the proper handler
+exit [CROOT.C] -  wraps the DOS exit syscall and unloads the game
+exp_add [MONSTERS.C] -  adds an experience modifier
+extinguish [DAEMON.C] -  destroys a daemon
+fakedos [FAKEDOS.C] -  imitates the DOS prompt (launch with ! key)
+fall [WEAPONS.C] -  drops an item around around a location
+fallpos [WEAPONS.C] -  gets the fall position offset from a fixed point
+fatal [MAIN.C] -  end process with message
+fight [FIGHT.C] -  player attacks monsters
+find_dest [CHASE.C] -  returns a target destination for a chaser
+find_dir [MISC.C] - returns the delta coordinate of a direction
+find_drive [LOAD.C] -  finds the drive using a DOS software interrupt
+find_obj [MISC.C] -  returns a pointer to an object at input position
+find_slot [DAEMON.C] -  returns a daemon by its function
+fire_bolt [STICKS.C] -  ranged fire attack
+fix_stick [STICKS.C] -  initializes wand/staff
+fixup [CURSES.C] -  clear a screen column
+flush_type [MACH_DEP.C] -  clears the keyboard lookahead buffer
+forcebw [CURSES.C] -  sets mode to black and white
+fuse [DAEMON.C] -  sets a daemon to go off after a delay
+get_dir [MISC.C] -  gets a direction and returns success/fail
+get_item [PACK.C] -  uses and item from inventory
+get_mode [CURSES.C] -  returns the video mode using BIOS
+get_num [WIZARD.C] -  gets a number from the player
+get_prefix [COMMAND.C] -  returns the first character of input
+get_scores [RIP.C] -  get the score history
+getenv [ENV.C] - Returns environment variables
+gethand [RINGS.C] -  requests the interested hand from the player
+getinfo [IO.C] -  it is the general purpose keyboard reader/parser
+getrc [CURSES.C] -  updates the cursor position pointers to the cache
+getsyl [INIT.C] -  generates a syllable for a random name
+give_pack [MONSTERS.C] -  creates inventory for a monster
+goodch [MISC.C] -  modifies an object display character if its bad
+help [MISC.C] -  displays game help screen
+hit [FIGHT.C] -  prints hit message
+hit_monster [WEAPONS.C] -  detects missile hit and applies damage
+horiz [ROOMS.C] -  draws a horizontal wall for a room
+ifterse [IO.C] -  returns strings based on game terse status
+implode [CURSES.C] -  clear screen animation
+INDEX [MISC.C] -  returns a position in the level data array
+init_colors [INIT.C] -  sets up a palette table for this game run
+init_ds [INIT.C] -  sets up the game heap (single static allocation)
+init_materials [INIT.C] -  randomly matches wood and staff types
+init_names [INIT.C] -  sets the randomized unknown scroll names
+init_player [INIT.C] -  sets starting variables for the player
+init_stones [INIT.C] -  matches a random mix of rings and stones
+init_things [INIT.C] -  sets up a cumulative probability table
+init_weapon [WEAPONS.C] -  initializes weapon variables
+inrange [MAZE.C] -  returns true if the input is within the room
+inv_name [THINGS.C] -  returns the inventory display name of an item
+inventory [PACK.C] -  lists out the items in inventory
+invis_on [POTIONS.C] -  turn on see invisible effect
+is_current [MISC.C] -  returns true if input object is in use
+is_magic [FIGHT.C] -  checks if an object is magical
+is_set [ENV.C] - returns true if an environment label exists
+isalpha [STRINGS.C] - returns true if input is a letter
+isdigit [STRINGS.C] - returns true if input is a number
+isjr [MACH_DEP.C] -  detects and returns flag if this is a PCjr
+islower [STRINGS.C] - returns true if the input is lower case
+isprint [STRINGS.C] - returns true if input is a printable character
+isspace [STRINGS.C] - returns true if the input is a space
+istest [MISC.C] -  is useless
+isupper [STRINGS.C] - returns true if input is upper case
+killed [FIGHT.C] -  kills a monster
+killname [RIP.C] -  gets name of the monster that killed the player
+lcase [STRINGS.C] -  converts a string to lower case
+leave [MAIN.C] -  quick exit from game
+leave_room [ROOMS.C] -  updates the display as player exits a room
+lengthen [DAEMON.C] -  increases the time delay of a daemon
+look [MISC.C] -  updates the screen...forced recalculate and redraw
+main [MAIN.C] -  the entry point for Rogue
+maze_at [MAZE.C] -  checks a point and returns true if it's a maze
+me [MISC.C] -  returns a global variable
+miss [FIGHT.C] -  prints miss message
+missile [WEAPONS.C] -  launches a projectile
+moat [MONSTERS.C] -  returns a monster at an input position
+money [PACK.C] -  add or take away gold
+more [IO.C] -  pauses messages to wait for user input
+msg [IO.C] -  prints a message to the screen
+mvaddch [CURSES.C] -  prints a character at a position
+mvaddstr [CURSES.C] -  prints a string starting at a position
+mvinch [CURSES.C] -  Returns a character at a position
+new_frontier [MAZE.C] -  adds cardinal points to the frontier
+new_item [LIST.C] -  creates a new object
+new_level [NEW_LEVE.C] -  generates a new level -- all stored at global
+new_monster [MONSTERS.C] -  initializes a new monster for the level
+new_slime [SLIME.C] -  creates a new slime from the parent
+new_thing [THINGS.C] -  allocates and initializes a new item
+newmem [MACH_DEP.C] -  memory allocator (std malloc not invented yet)
+no_clock [MACH_DEP.C] -  restores original RTC interrupt handler
+nohaste [DAEMONS.C] -  player loses haste effect
+noper [CROOT.C] -  a quick NOP function in C
+noterse [IO.C] -  returns the appropriate (non)terse string
+nothing [THINGS.C] -  set up buffer for no discoveries
+num [WEAPONS.C] -  assign passage number to a passage
+numpass [PASSAGES.C] -  calculates the additional damage/protect description
+offmap [MISC.C] -  returns true if input is off the map
+one_tick [MACH_DEP.C] -  blocks for one tick
+pack_char [PACK.C] -  gets the inventory index
+pack_obj [PACK.C] -  returns object and updates backpack pointer
+passnum [PASSAGES.C] -  assigns numbers to all passages
+passwd [WIZARD.C] -  pings the player for the secret code
+peekc [ENV.C] - reads the next character in a file
+pf_chr [IO.C] -  format the input as a character
+pf_int [IO.C] -  format the input as a signed integer
+pf_per [IO.C] -  formats the input as an attribute token
+pf_str [IO.C] -  converts all input to string
+pf_uint [IO.C] -  format the input as an unsigned integer
+pick_mons [MONSTERS.C] -  chooses a monster as a vorpal type
+pick_one [THINGS.C] -  chooses a magic item in a list, returns index
+pick_up [PACK.C] -  pick up an item
+playit [MAIN.C] -  the main game play loop: read input and execute
+plop_monster [SLIME.C] -  places the newly created slime
+pr_scores [RIP.C] -  prints the top scores
+print_disc [THINGS.C] -  shows discovers of a specific type
+printw [CURSES.C] -  prints an (almost) variadic string to the screen
+prname [FIGHT.C] -  prints attacker name
+protect [PROTECT.C] -  confirms copy protection
+psplat [PASSAGES.C] -  dig a single square of a passage
+put_scores [RIP.C] -  save the score history
+put_things [NEW_LEVE.C] -  places potions and scrolls
+putenv [ENV.C] - adds a label to the environment
+putmsg [IO.C] -  adds a multiline message to the top line as needed
+quaff [POTIONS.C] -  drinks a potion and applies effects
+quit [MAIN.C] -  graceful program exit
+raise_curtain [CURSES.C] -  slide in screen updating effect
+raise_level [FIGHT.C] -  levels up the player
+ran [MAIN.C] -  random number generator seed incrementation
+randmonster [MONSTERS.C] -  returns a random monster type
+rchr [INIT.C] -  returns a random character from an input string
+read_scroll [SCROLLS.C] -  invokes scroll magic
+readchar [MACH_DEP.C] -  retursn the next input character
+real_rc [CURSES.C] - gets the cursor position
+remove [FIGHT.C] -  removes monster from game and frees memory
+repchr [CURSES.C] -  repeats a character
+res_win [CURSES.C] -  restores the level flags stored in video memory
+restore [SAVE.C] -  loads and continues a saved game
+ring_eat [RINGS.C] -  ring magic alters player food consumption
+ring_num [RINGS.C] -  prints information about the ring
+ring_off [RINGS.C] -  removes a ring and its effects
+ring_on [RINGS.C] -  wears a ring and applies effects
+rnd [MAIN.C] -  returns a random number from a range
+rnd_pos [ROOMS.C] -  randomly choose a movement destination
+rnd_room [NEW_LEVE.C] -  returns the index to a random room
+rndmove [MOVE.C] -  returns a random location in a room
+roll [MAIN.C] -  rolls for random chance to wake up a monster
+roll_em [FIGHT.C] -  rolls attack stats
+rollwand [DAEMONS.C] -  rolls a die using input die configuration
+roomin [CHASE.C] -  returns a room by input coordinates
+runners [CHASE.C] -  each running monster takes a step
+sav_win [CURSES.C] -  saves the level flags to video memory
+save [FIGHT.C] -  rolls an entity's chance to save
+save_ds [SAVE.C] -  roll for save against effects
+save_game [SAVE.C] -  saves the game
+save_throw [FIGHT.C] -  saves the data segment containing game data
+scan_num [IO.C] -  returns value of the current number in string
+score [RIP.C] -  calculates end of game stats
+scr_load [LOAD.C] -  initializes the screen for graphics display
+scrl [IO.C] -  push a message across a line
+scroll [CURSES.C] -  scrolls a screen region up 1 line
+scroll_dn [CURSES.C] -  scrolls a screen region down 1 line
+scroll_up [CURSES.C] -  scrolls the screen up one line
+search [MISC.C] -  searches around the player for hidden things
+see_monst [CHASE.C] -  checks if the player can see a monster
+set_attr [CURSES.C] - sets the attribute byte of a map position
+set_ctrlb [MACH_DEP.C] -  overrides control-break interrupt handler
+set_cursor [CURSES.C] -  dead code
+set_order [THINGS.C] -  randomize an input list
+setenv [ENV.C] - puts input data in to the shell environment
+setup [MACH_DEP.C] -  sets up the screen and control-break
+short_name [WEAPONS.C] -  returns the brief name (item type)
+show_count [COMMAND.C] -  displays the current count of repeated actions
+show_map [WIZARD.C] -  prints out the complete map
+show_win [IO.C] - display the window and wait for input
+SIG2 [IO.C] -  keyboard hardware handler
+sight [DAEMONS.C] -  remove player blindness
+sign [MISC.C] -  returns -1,0,1 based on sign of number
+slime_split [SLIME.C] -  sets input point as a maze passage.
+splat [MAZE.C] -  returns a random number within 10% of input
+spread [MISC.C] -  resolves a formatted string in a target buffer
+sprintf [IO.C] -  returns a random number seed
+srand [MACH_DEP.C] - returns a random seed
+start_run [CHASE.C] -  wakes up a monster
+status [IO.C] -  displays the player status line
+stccpy [STRINGS.C] -  copies strings
+step_ok [MISC.C] -  returns true if player can move on input space
+stomach [DAEMONS.C] -  makes the player more hungry. Adds hunger effects
+stpblk [STRINGS.C] -  skips blanks from a string
+stpbrk [STRINGS.C] -  skips characters in a string
+str_attr [IO.C] -  prints a formatted string
+str_plus [FIGHT.C] -  calculates strength benefit to hit chance
+swander [DAEMONS.C] -  triggers monster wander
+swing [FIGHT.C] -  checks for a hit or miss
+swint [MACH_DEP.C] -  invokes software interrupt under DOS
+switch_page [CURSES.C] -  swaps video memory page
+take_off [ARMOR.C] -  take off worn armor, if possible
+talloc [LIST.C] -  allocates memory for a new object
+teleport [WIZARD.C] -  moves player to another location
+th_effect [POTIONS.C] -  apply thrown potion effect to monsters
+thunk [FIGHT.C] -  roll for missile hit/miss
+tick_pause [WEAPONS.C] -  blocks processing during the same tick
+toascii [STRINGS.C] - converts input to ASCII
+tolower [STRINGS.C] -  converts input from upper to lower case
+total_winner [RIP.C] -  display the victory screen
+toupper [STRINGS.C] -  converts input from lower to upper case
+tr_name [MISC.C] -  returns a string of the trap name
+treas_room [NEW_LEVE.C] -  create a treasure room
+turn_see [POTIONS.C] -  toggle detect monsters effect
+u_level [MISC.C] -  go up a level
+unconfuse [DAEMONS.C] - unconfuse player
+unctrl [IO.C] -  converts input character to printable
+unsee [DAEMONS.C] -  remove see invisible
+unsetup [MACH_DEP.C] -  restores ctrl-break
+vbox [CURSES.C] -  draws an ASCII box on the screen 
+vert [ROOMS.C] -  draws a vertical wall for a room
+video_mode [CURSES.C] -  sets the video mode
+vowelstr [MISC.C] -  Converts 'a'->'an' when input starts with vowel
+wait_for [IO.C] -  stops game until player hits the input character
+wake_monster [MONSTERS.C] -  sets off a monster chasing the player
+wanderer [MONSTERS.C] -  creates a wandering monster
+waste_time [ARMOR.C] -  processes timers and background daemons
+wclose [CURSES.C] -  closes the output window
+wdump [CURSES.C] -  outputs the screen state to backup buffer
+wear [ARMOR.C] -  puts on armor if possible
+whatis [WIZARD.C] -  identifies an object
+wield [WEAPONS.C] -  wears a weapon
+winat [MISC.C] -  returns character on the map at input position
+winit [CURSES.C] -  initializes the game window
+wrestor [CURSES.C] -  loads a save console screen from memory
+
+
+FUNCTIONS BY SOURCE FILE
+-------------------------
+
+ARMOR.C:14:wear
+ARMOR.C:42:take_off
+ARMOR.C:61:waste_time
+CHASE.C:18:runners
+CHASE.C:42:do_chase
+CHASE.C:182:see_monst
+CHASE.C:211:start_run
+CHASE.C:240:chase
+CHASE.C:342:roomin
+CHASE.C:366:diag_ok
+CHASE.C:378:cansee
+CHASE.C:403:find_dest
+COMMAND.C:13:command
+COMMAND.C:49:com_char
+COMMAND.C:74:get_prefix
+COMMAND.C:154:show_count
+COMMAND.C:163:execcom
+CROOT.C:8:noper
+CROOT.C:15:Croot
+CROOT.C:48:exit
+CURSES.C:7:char *sbrk
+CURSES.C:93:clear
+CURSES.C:105:cursor
+CURSES.C:136:getrc
+CURSES.C:143:real_rc
+CURSES.C:161:clrtoeol
+CURSES.C:171:mvaddstr
+CURSES.C:179:mvaddch
+CURSES.C:187:mvinch
+CURSES.C:199:addch
+CURSES.C:293:addstr
+CURSES.C:300:set_attr
+CURSES.C:309:error
+CURSES.C:328:set_cursor
+CURSES.C:343:winit
+CURSES.C:424:forcebw
+CURSES.C:434:wdump
+CURSES.C:441:sav_win
+CURSES.C:448:res_win
+CURSES.C:458:wrestor
+CURSES.C:469:wclose
+CURSES.C:485:box
+CURSES.C:495:vbox
+CURSES.C:534:center
+CURSES.C:545:printw
+CURSES.C:554:scroll_up
+CURSES.C:564:scroll_dn
+CURSES.C:575:scroll
+CURSES.C:587:blot_out
+CURSES.C:597:repchr
+CURSES.C:609:fixup
+CURSES.C:618:implode
+CURSES.C:648:drop_curtain
+CURSES.C:672:raise_curtain
+CURSES.C:687:switch_page
+CURSES.C:705:get_mode
+CURSES.C:714:video_mode
+DAEMON.C:27:d_slot
+DAEMON.C:45:find_slot
+DAEMON.C:46:int 
+DAEMON.C:60:daemon
+DAEMON.C:61:int 
+DAEMON.C:75:do_daemons
+DAEMON.C:94:fuse
+DAEMON.C:95:int 
+DAEMON.C:109:lengthen
+DAEMON.C:110:int 
+DAEMON.C:124:extinguish
+DAEMON.C:125:int 
+DAEMON.C:138:do_fuses
+DAEMONS.C:14:doctor
+DAEMONS.C:45:swander
+DAEMONS.C:54:rollwand
+DAEMONS.C:74:unconfuse
+DAEMONS.C:84:unsee
+DAEMONS.C:98:sight
+DAEMONS.C:114:nohaste
+DAEMONS.C:124:stomach
+ENV.C:63:setenv
+ENV.C:153:peekc
+ENV.C:188:getenv
+ENV.C:211:putenv
+ENV.C:224:is_set
+FAKEDOS.C:10:fakedos
+FAKEDOS.C:35:dodos
+FIGHT.C:14:fight
+FIGHT.C:90:attack
+FIGHT.C:263:swing
+FIGHT.C:276:check_level
+FIGHT.C:300:roll_em
+FIGHT.C:418:prname
+FIGHT.C:441:hit
+FIGHT.C:461:miss
+FIGHT.C:482:save_throw
+FIGHT.C:496:save
+FIGHT.C:512:str_plus
+FIGHT.C:560:raise_level
+FIGHT.C:570:thunk
+FIGHT.C:588:remove
+FIGHT.C:623:is_magic
+FIGHT.C:646:killed
+INIT.C:13:char *newmem
+INIT.C:19:init_player
+INIT.C:235:init_things
+INIT.C:247:init_colors
+INIT.C:273:init_names
+INIT.C:316:getsyl
+INIT.C:331:rchr
+INIT.C:341:init_stones
+INIT.C:366:init_materials
+INIT.C:431:init_ds
+IO.C:16:char *stpbrk
+IO.C:27:ifterse
+IO.C:37:msg
+IO.C:63:addmsg
+IO.C:75:endmsg
+IO.C:99:more
+IO.C:159:doadd
+IO.C:172:putmsg
+IO.C:206:scrl
+IO.C:237:unctrl
+IO.C:261:status
+IO.C:375:wait_for
+IO.C:392:show_win
+IO.C:407:getinfo
+IO.C:459:backspace
+IO.C:488:str_attr
+IO.C:555:SIG2
+IO.C:709:int pf_str
+IO.C:709:int pf_chr
+IO.C:709:int pf_uint
+IO.C:709:int pf_int
+IO.C:709:int pf_per
+IO.C:724:sprintf
+IO.C:766:scan_num
+IO.C:777:pf_str
+IO.C:784:blanks
+IO.C:791:pf_chr
+IO.C:800:pf_int
+IO.C:810:pf_uint
+IO.C:835:pf_per
+IO.C:841:noterse
+LIST.C:73:new_item
+LIST.C:90:talloc
+LIST.C:112:discard
+LOAD.C:19:epyx_yuck
+LOAD.C:46:scr_load
+LOAD.C:82:bload
+LOAD.C:96:find_drive
+MACH_DEP.C:21:setup
+MACH_DEP.C:37:clock_on
+MACH_DEP.C:49:no_clock
+MACH_DEP.C:57:srand
+MACH_DEP.C:75:flush_type
+MACH_DEP.C:85:credits
+MACH_DEP.C:172:readchar
+MACH_DEP.C:202:bdos
+MACH_DEP.C:220:newmem
+MACH_DEP.C:240:isjr
+MACH_DEP.C:251:swint
+MACH_DEP.C:262:set_ctrlb
+MACH_DEP.C:278:unsetup
+MACH_DEP.C:283:one_tick
+MAIN.C:39:main
+MAIN.C:141:endit
+MAIN.C:154:ran
+MAIN.C:165:rnd
+MAIN.C:175:roll
+MAIN.C:190:playit
+MAIN.C:223:quit
+MAIN.C:271:leave
+MAIN.C:285:fatal
+MAZE.C:21:draw_maze
+MAZE.C:79:new_frontier
+MAZE.C:88:add_frnt
+MAZE.C:106:con_frnt
+MAZE.C:152:maze_at
+MAZE.C:160:splat
+MAZE.C:173:inrange
+MISC.C:15:tr_name
+MISC.C:41:look
+MISC.C:231:find_obj
+MISC.C:251:eat
+MISC.C:297:chg_str
+MISC.C:318:add_str
+MISC.C:332:add_haste
+MISC.C:357:aggravate
+MISC.C:371:vowelstr
+MISC.C:391:is_current
+MISC.C:409:get_dir
+MISC.C:433:find_dir
+MISC.C:458:sign
+MISC.C:471:spread
+MISC.C:482:call_it
+MISC.C:501:step_ok
+MISC.C:524:goodch
+MISC.C:578:help
+MISC.C:639:DISTANCE
+MISC.C:655:INDEX
+MISC.C:664:offmap
+MISC.C:669:winat
+MISC.C:680:search
+MISC.C:728:d_level
+MISC.C:742:u_level
+MISC.C:761:call
+MISC.C:815:do_macro
+MISC.C:832:me
+MISC.C:840:istest
+MONSTERS.C:22:randmonster
+MONSTERS.C:45:new_monster
+MONSTERS.C:104:exp_add
+MONSTERS.C:124:wanderer
+MONSTERS.C:159:wake_monster
+MONSTERS.C:213:give_pack
+MONSTERS.C:228:pick_mons
+MONSTERS.C:247:moat
+MOVE.C:20:do_run
+MOVE.C:33:do_move
+MOVE.C:192:door_open
+MOVE.C:217:be_trapped
+MOVE.C:283:descend
+MOVE.C:303:rndmove
+NEW_LEVE.C:16:new_level
+NEW_LEVE.C:127:rnd_room
+NEW_LEVE.C:141:put_things
+NEW_LEVE.C:215:treas_room
+PACK.C:11:pack_obj
+PACK.C:30:add_pack
+PACK.C:214:inventory
+PACK.C:255:pick_up
+PACK.C:289:get_item
+PACK.C:375:pack_char
+PACK.C:394:money
+PASSAGES.C:14:conn
+PASSAGES.C:156:do_passages
+PASSAGES.C:266:door
+PASSAGES.C:290:add_pass
+PASSAGES.C:308:passnum
+PASSAGES.C:328:numpass
+PASSAGES.C:364:psplat
+POTIONS.C:14:quaff
+POTIONS.C:214:invis_on
+POTIONS.C:230:turn_see
+POTIONS.C:267:th_effect
+PROTECT.C:48:protect
+RINGS.C:15:ring_on
+RINGS.C:76:ring_off
+RINGS.C:109:gethand
+RINGS.C:132:ring_eat
+RINGS.C:165:ring_num
+RIP.C:24:score
+RIP.C:96:get_scores
+RIP.C:110:put_scores
+RIP.C:122:pr_scores
+RIP.C:202:add_scores
+RIP.C:229:death
+RIP.C:300:total_winner
+RIP.C:429:killname
+RIP.C:474:demo
+ROOMS.C:16:do_rooms
+ROOMS.C:147:draw_room
+ROOMS.C:175:vert
+ROOMS.C:189:horiz
+ROOMS.C:203:rnd_pos
+ROOMS.C:215:enter_room
+ROOMS.C:253:leave_room
+SAVE.C:42:save_game
+SAVE.C:83:save_ds
+SAVE.C:146:restore
+SCROLLS.C:16:read_scroll
+SLIME.C:17:slime_split
+SLIME.C:33:new_slime
+SLIME.C:65:plop_monster
+STICKS.C:15:fix_stick
+STICKS.C:40:do_zap
+STICKS.C:289:drain
+STICKS.C:338:fire_bolt
+STICKS.C:456:charge_str
+STRINGS.C:5:isalpha
+STRINGS.C:6:isupper
+STRINGS.C:7:islower
+STRINGS.C:8:isdigit
+STRINGS.C:9:isspace
+STRINGS.C:10:isprint
+STRINGS.C:12:toascii
+STRINGS.C:17:toupper
+STRINGS.C:23:tolower
+STRINGS.C:29:stccpy
+STRINGS.C:48:stpblk
+STRINGS.C:56:stpbrk
+STRINGS.C:68:endblk
+STRINGS.C:82:lcase
+THINGS.C:17:inv_name
+THINGS.C:152:chopmsg
+THINGS.C:165:drop
+THINGS.C:215:can_drop
+THINGS.C:261:new_thing
+THINGS.C:361:pick_one
+THINGS.C:398:discovered
+THINGS.C:417:print_disc
+THINGS.C:469:set_order
+THINGS.C:492:add_line
+THINGS.C:537:end_line
+THINGS.C:554:nothing
+WEAPONS.C:34:missile
+WEAPONS.C:86:do_motion
+WEAPONS.C:128:short_name
+WEAPONS.C:150:fall
+WEAPONS.C:188:init_weapon
+WEAPONS.C:212:hit_monster
+WEAPONS.C:232:num
+WEAPONS.C:248:wield
+WEAPONS.C:284:fallpos
+WEAPONS.C:320:tick_pause
+WIZARD.C:16:whatis
+WIZARD.C:66:create_obj
+WIZARD.C:151:teleport
+WIZARD.C:211:passwd
+WIZARD.C:240:show_map
+WIZARD.C:259:get_num

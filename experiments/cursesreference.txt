@@ -1,0 +1,11 @@
+https://www.devdungeon.com/content/curses-programming-python
+
+"Curtsies" examples:
+https://curtsies.readthedocs.io/en/latest/examples.html
+
+"URWid" examples:
+https://urwid.org/examples/index.html
+
+"npyscreen":
+https://npyscreen.readthedocs.io/application-structure.html
+

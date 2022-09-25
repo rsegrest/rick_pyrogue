@@ -2,9 +2,10 @@
 # Event
 import math
 from typing import TypeVar, Type, NewType, List
+from src.idlist import IdList
 # IdT = TypeVar('IdT', bound='Id')
-IdT = TypeVar("IdT")
-Ids = NewType('Ids', List[IdT])
+# IdT = TypeVar("IdT")
+# Ids = NewType('Ids', List[IdT])
 
 class Id:
     ARMOR =     0x00100
@@ -238,32 +239,35 @@ class Id:
         self.id_status = None
     
     def mix_colors(self, rand):
-        # for(int j= id_potions.length; --j>1;){
-		# 	int k= rand.get(j-1);
-		# 	String t= id_potions[j].title;
-		# 	id_potions[j].title= id_potions[k].title;
-		# 	id_potions[k].title= t;
-		# }
+        for j in range(len(Id.id_potions),1):
+            k = rand.get(j-1)
+            t = Id.id_potions[j].title
+            Id.id_potions[j].title= Id.id_potions[k].title
+            Id.id_potions[k].title= t
         return -1
     
     def make_scroll_titles(self, rand):
         # // Also name the wands and rings
         # for(int i= 0; i < id_scrolls.length; i++){
-        # 	int sylls= rand.get(2, 5);
-        # 	String ti= "'";
-        # 	for(int j= 0; j < sylls; j++){
-        # 		int s= rand.get(1, syllables.length-1);
-        # 		ti= ti.concat(syllables[s]);
-        # 	}
-        # 	id_scrolls[i].title= ti.concat("' ");
-        # }
+        for i in range(0,len(Id.id_scrolls)):
+            sylls = rand.get(2, 5);
+            ti= "'";
+            # for(int j= 0; j < sylls; j++){
+            for j in range(0,sylls):
+                s = rand.get(1, len(Id.syllables)-1)
+                ti= ti.concat(Id.syllables[s])
+            Id.id_scrolls[i].title= ti.concat("' ")
         # int perm[]= rand.permute(wand_materials.length);
-        # for(int i= 0; i<id_wands.length; i++)
-        # 	id_wands[i].title= wand_materials[perm[i]];
+        perm = rand.permute(len(Id.wand_materials))
 
-        # perm= rand.permute(gems.length);
+        # for(int i= 0; i<id_wands.length; i++)
+        for i in range(0, len(Id.id_wands)):
+            Id.id_wands[i].title= Id.wand_materials[perm[i]];
+
+        perm= rand.permute(len(Id.gems))
         # for(int i= 0; i<id_rings.length; i++)
-        # 	id_rings[i].title= gems[perm[i]];
+        for i in range(0, len(Id.id_rings)):
+            Id.id_rings[i].title = Id.gems[perm[i]];
         return -1
     
     def is_direction(self, c):
@@ -303,47 +307,43 @@ class Id:
         if scol < dcol:
             return self.RIGHT
         return self.LEFT
-    
-    # def foo(self, bar: Type[MyClassT]) -> MyClassT:
-    #     return MyClass(self.attr_a + bar.attr_a)
-    # , IdT: Type[IdT]
-    @staticmethod
-    def idlist(mylist, status, bar: Type[IdT]) -> List[IdT]:
-        # n = len(mylist) / 3
-        # i = 0
-        # n_int = math.floor(n)
-        # ids = []
-        # for k in range(n_int):
-        #     # create new id
-        #     # ids.append(bar.__init__())
-        #     new_id = bar.__init__()
-        #     ids.append(new_id)
-        #     ids[k]['value'] = int(mylist[i])
-        #     i += 1
-        #     ids[k]['title'] = mylist[i]
-        #     i += 1
-        #     ids[k]['real'] = mylist[i]
-        #     ids[k]['id_status'] = status
-        # return ids
-        return []
+
+    # @staticmethod
+    # def idlist(mylist, status, bar: Type[IdT]) -> List[IdT]:
+    #     # n = len(mylist) / 3
+    #     # i = 0
+    #     # n_int = math.floor(n)
+    #     # ids = []
+    #     # for k in range(n_int):
+    #     #     # create new id
+    #     #     # ids.append(bar.__init__())
+    #     #     new_id = bar.__init__()
+    #     #     ids.append(new_id)
+    #     #     ids[k]['value'] = int(mylist[i])
+    #     #     i += 1
+    #     #     ids[k]['title'] = mylist[i]
+    #     #     i += 1
+    #     #     ids[k]['real'] = mylist[i]
+    #     #     ids[k]['id_status'] = status
+    #     # return ids
+    #     return []
     
     @staticmethod
     def list_items():
-        Id.id_potions = Id.idlist(Id.potionsList, 0, 'Id')
-        Id.id_scrolls = Id.idlist(Id.scrollsList, 0, 'Id')
-        Id.id_weapons = Id.idlist(Id.weaponsList, 0, 'Id')
-        Id.id_armors = Id.idlist(Id.armorsList, 0, 'Id')
-        Id.id_wands = Id.idlist(Id.wandsList, 0, 'Id')
-        Id.id_rings = Id.idlist(Id.ringsList, 0, 'Id')
-        
+        Id.id_potions = IdList(Id.potionsList, 0)
+        Id.id_scrolls = IdList(Id.scrollsList, 0)
+        Id.id_weapons = IdList(Id.weaponsList, 0)
+        Id.id_armors = IdList(Id.armorsList, 0)
+        Id.id_wands = IdList(Id.wandsList, 0)
+        Id.id_rings = IdList(Id.ringsList, 0)
 
-    id_weapons = idlist.__func__(weaponsList, 0, 'Id')
-    id_scrolls = idlist.__func__(scrollsList, 0, 'Id')
-    id_potions = idlist.__func__(potionsList, 0, 'Id')
+    id_weapons = IdList(weaponsList, 0)
+    id_scrolls = IdList(scrollsList, 0)
+    id_potions = IdList(potionsList, 0)
     
-    id_armors = idlist.__func__(armorsList, 0, 'Id')
-    id_wands = idlist.__func__(wandsList, 0, 'Id')
-    id_rings = idlist.__func__(ringsList, 0, 'Id')
+    id_armors = IdList(armorsList, 0)
+    id_wands = IdList(wandsList, 0)
+    id_rings = IdList(ringsList, 0)
 
     @staticmethod
     def is_vowel(ch):
