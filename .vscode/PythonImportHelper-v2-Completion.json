@@ -1,0 +1,1042 @@
+[
+    {
+        "label": "curses",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "curses",
+        "description": "curses",
+        "detail": "curses",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "importPath": "src.rowcol",
+        "description": "src.rowcol",
+        "isExtraImport": true,
+        "detail": "src.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "importPath": "src.rowcol",
+        "description": "src.rowcol",
+        "isExtraImport": true,
+        "detail": "src.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "importPath": "src.rowcol",
+        "description": "src.rowcol",
+        "isExtraImport": true,
+        "detail": "src.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "importPath": "src.rowcol",
+        "description": "src.rowcol",
+        "isExtraImport": true,
+        "detail": "src.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "importPath": "src.rowcol",
+        "description": "src.rowcol",
+        "isExtraImport": true,
+        "detail": "src.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "src.item",
+        "description": "src.item",
+        "isExtraImport": true,
+        "detail": "src.item",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "src.item",
+        "description": "src.item",
+        "isExtraImport": true,
+        "detail": "src.item",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "src.item",
+        "description": "src.item",
+        "isExtraImport": true,
+        "detail": "src.item",
+        "documentation": {}
+    },
+    {
+        "label": "RandomX",
+        "importPath": "src.randomx",
+        "description": "src.randomx",
+        "isExtraImport": true,
+        "detail": "src.randomx",
+        "documentation": {}
+    },
+    {
+        "label": "RandomX",
+        "importPath": "src.randomx",
+        "description": "src.randomx",
+        "isExtraImport": true,
+        "detail": "src.randomx",
+        "documentation": {}
+    },
+    {
+        "label": "RandomX",
+        "importPath": "src.randomx",
+        "description": "src.randomx",
+        "isExtraImport": true,
+        "detail": "src.randomx",
+        "documentation": {}
+    },
+    {
+        "label": "unicode_literals",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "division",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "FullscreenWindow",
+        "importPath": "curtsies",
+        "description": "curtsies",
+        "isExtraImport": true,
+        "detail": "curtsies",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "curtsies",
+        "description": "curtsies",
+        "isExtraImport": true,
+        "detail": "curtsies",
+        "documentation": {}
+    },
+    {
+        "label": "FSArray",
+        "importPath": "curtsies",
+        "description": "curtsies",
+        "isExtraImport": true,
+        "detail": "curtsies",
+        "documentation": {}
+    },
+    {
+        "label": "FullscreenWindow",
+        "importPath": "curtsies",
+        "description": "curtsies",
+        "isExtraImport": true,
+        "detail": "curtsies",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "curtsies",
+        "description": "curtsies",
+        "isExtraImport": true,
+        "detail": "curtsies",
+        "documentation": {}
+    },
+    {
+        "label": "fsarray",
+        "importPath": "curtsies",
+        "description": "curtsies",
+        "isExtraImport": true,
+        "detail": "curtsies",
+        "documentation": {}
+    },
+    {
+        "label": "red",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "bold",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "green",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "on_blue",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "yellow",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "on_red",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "curtsies.fmtfuncs",
+        "description": "curtsies.fmtfuncs",
+        "isExtraImport": true,
+        "detail": "curtsies.fmtfuncs",
+        "documentation": {}
+    },
+    {
+        "label": "curtsies.events",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "curtsies.events",
+        "description": "curtsies.events",
+        "detail": "curtsies.events",
+        "documentation": {}
+    },
+    {
+        "label": "Terminal",
+        "importPath": "blessings",
+        "description": "blessings",
+        "isExtraImport": true,
+        "detail": "blessings",
+        "documentation": {}
+    },
+    {
+        "label": "ascii_helper",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ascii_helper",
+        "description": "ascii_helper",
+        "detail": "ascii_helper",
+        "documentation": {}
+    },
+    {
+        "label": "ASCII_Helper",
+        "importPath": "ascii_helper",
+        "description": "ascii_helper",
+        "isExtraImport": true,
+        "detail": "ascii_helper",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Type",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "NewType",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "IdList",
+        "importPath": "src.idlist",
+        "description": "src.idlist",
+        "isExtraImport": true,
+        "detail": "src.idlist",
+        "documentation": {}
+    },
+    {
+        "label": "Id",
+        "importPath": "id",
+        "description": "id",
+        "isExtraImport": true,
+        "detail": "id",
+        "documentation": {}
+    },
+    {
+        "label": "TOY",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "MONSTER",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "MAN",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "TRAP",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "DOOR",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "TOY",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "HOLDER",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "DARK",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "MONSTER",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "TRAP",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "TUNNEL",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "STAIRS",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "HORWALL",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "VERTWALL",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "FLOOR",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "DOOR",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "HIDDEN",
+        "importPath": "src.header",
+        "description": "src.header",
+        "isExtraImport": true,
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "ItemVector",
+        "importPath": "src.itemvector",
+        "description": "src.itemvector",
+        "isExtraImport": true,
+        "detail": "src.itemvector",
+        "documentation": {}
+    },
+    {
+        "label": "ItemVector",
+        "importPath": "src.itemvector",
+        "description": "src.itemvector",
+        "isExtraImport": true,
+        "detail": "src.itemvector",
+        "documentation": {}
+    },
+    {
+        "label": "Potion",
+        "importPath": "src.potion",
+        "description": "src.potion",
+        "isExtraImport": true,
+        "detail": "src.potion",
+        "documentation": {}
+    },
+    {
+        "label": "Scroll",
+        "importPath": "src.scroll",
+        "description": "src.scroll",
+        "isExtraImport": true,
+        "detail": "src.scroll",
+        "documentation": {}
+    },
+    {
+        "label": "Toy",
+        "importPath": "src.toy",
+        "description": "src.toy",
+        "isExtraImport": true,
+        "detail": "src.toy",
+        "documentation": {}
+    },
+    {
+        "label": "Id",
+        "importPath": "src.id",
+        "description": "src.id",
+        "isExtraImport": true,
+        "detail": "src.id",
+        "documentation": {}
+    },
+    {
+        "label": "Id",
+        "importPath": "src.id",
+        "description": "src.id",
+        "isExtraImport": true,
+        "detail": "src.id",
+        "documentation": {}
+    },
+    {
+        "label": "Random",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "gc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gc",
+        "description": "gc",
+        "detail": "gc",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "synchronized",
+        "importPath": "multiprocessing.sharedctypes",
+        "description": "multiprocessing.sharedctypes",
+        "isExtraImport": true,
+        "detail": "multiprocessing.sharedctypes",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "src.view",
+        "description": "src.view",
+        "isExtraImport": true,
+        "detail": "src.view",
+        "documentation": {}
+    },
+    {
+        "label": "Man",
+        "importPath": "src.man",
+        "description": "src.man",
+        "isExtraImport": true,
+        "detail": "src.man",
+        "documentation": {}
+    },
+    {
+        "label": "NineRoom",
+        "importPath": "src.nineroom",
+        "description": "src.nineroom",
+        "isExtraImport": true,
+        "detail": "src.nineroom",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "Level",
+        "importPath": "src.level",
+        "description": "src.level",
+        "isExtraImport": true,
+        "detail": "src.level",
+        "documentation": {}
+    },
+    {
+        "label": "Rogue",
+        "importPath": "src.rogue",
+        "description": "src.rogue",
+        "isExtraImport": true,
+        "detail": "src.rogue",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.experiments.cursesdemo",
+        "description": "src.experiments.cursesdemo",
+        "peekOfCode": "def main():\n    \"\"\"\n    The curses.wrapper function is an optional function that\n    encapsulates a number of lower-level setup and teardown\n    functions, and takes a single function to run when\n    the initializations have taken place.\n    \"\"\"\n    curses.wrapper(curses_main)\ndef curses_main(w):\n    \"\"\"",
+        "detail": "src.experiments.cursesdemo",
+        "documentation": {}
+    },
+    {
+        "label": "curses_main",
+        "kind": 2,
+        "importPath": "src.experiments.cursesdemo",
+        "description": "src.experiments.cursesdemo",
+        "peekOfCode": "def curses_main(w):\n    \"\"\"\n    This function is called curses_main to emphasise that it is\n    the logical if not actual main function, called by curses.wrapper.\n    Its purpose is to call several other functions to demonstrate\n    some of the functionality of curses.\n    \"\"\"\n    w.addstr(\"-----------------\\n\")\n    w.addstr(\"| codedrome.com |\\n\")\n    w.addstr(\"| curses demo   |\\n\")",
+        "detail": "src.experiments.cursesdemo",
+        "documentation": {}
+    },
+    {
+        "label": "printing",
+        "kind": 2,
+        "importPath": "src.experiments.cursesdemo",
+        "description": "src.experiments.cursesdemo",
+        "peekOfCode": "def printing(w):\n    \"\"\"\n    A few simple demonstrations of printing.\n    \"\"\"\n    w.addstr(\"This was printed using addstr\\n\\n\")\n    w.refresh()\n    w.addstr(\"The following letter was printed using addch:- \")\n    w.addch('a')\n    w.refresh()\n    w.addstr(\"\\n\\nThese numbers were printed using addstr:-\\n{}\\n{:.6f}\\n\".format(123, 456.789))",
+        "detail": "src.experiments.cursesdemo",
+        "documentation": {}
+    },
+    {
+        "label": "moving_and_sleeping",
+        "kind": 2,
+        "importPath": "src.experiments.cursesdemo",
+        "description": "src.experiments.cursesdemo",
+        "peekOfCode": "def moving_and_sleeping(w):\n    \"\"\"\n    Demonstrates moving the cursor to a specified position before printing,\n    and sleeping for a specified period of time.\n    These are useful for very basic animations.\n    \"\"\"\n    row = 5\n    col = 0\n    curses.curs_set(False)\n    for c in range(65, 91):",
+        "detail": "src.experiments.cursesdemo",
+        "documentation": {}
+    },
+    {
+        "label": "colouring",
+        "kind": 2,
+        "importPath": "src.experiments.cursesdemo",
+        "description": "src.experiments.cursesdemo",
+        "peekOfCode": "def colouring(w):\n    \"\"\"\n    Demonstration of setting background and foreground colours.\n    \"\"\"\n    if curses.has_colors():\n        curses.init_pair(1, curses.COLOR_YELLOW, curses.COLOR_RED)\n        curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_GREEN)\n        curses.init_pair(3, curses.COLOR_MAGENTA, curses.COLOR_CYAN)\n        w.addstr(\"Yellow on red\\n\\n\", curses.color_pair(1))\n        w.refresh()",
+        "detail": "src.experiments.cursesdemo",
+        "documentation": {}
+    },
+    {
+        "label": "draw_menu",
+        "kind": 2,
+        "importPath": "src.experiments.cursesmenu",
+        "description": "src.experiments.cursesmenu",
+        "peekOfCode": "def draw_menu(stdscr):\n    k = 0\n    cursor_x = 0\n    cursor_y = 0\n    # Clear and refresh the screen for a blank canvas\n    stdscr.clear()\n    stdscr.refresh()\n    # Start colors in curses\n    curses.start_color()\n    curses.init_pair(1, curses.COLOR_CYAN, curses.COLOR_BLACK)",
+        "detail": "src.experiments.cursesmenu",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.experiments.cursesmenu",
+        "description": "src.experiments.cursesmenu",
+        "peekOfCode": "def main():\n    curses.wrapper(draw_menu)\nif __name__=='__main__':\n    main()",
+        "detail": "src.experiments.cursesmenu",
+        "documentation": {}
+    },
+    {
+        "label": "Frame",
+        "kind": 6,
+        "importPath": "src.experiments.curtsiesgameloop",
+        "description": "src.experiments.curtsiesgameloop",
+        "peekOfCode": "class Frame(curtsies.events.ScheduledEvent):\n    pass\nclass World(object):\n    def __init__(self):\n        self.s = 'Hello'\n    def tick(self):\n        self.s += '|'\n        self.s = self.s[max(1, len(self.s)-80):]\n    def process_event(self, e):\n        self.s += str(e)",
+        "detail": "src.experiments.curtsiesgameloop",
+        "documentation": {}
+    },
+    {
+        "label": "World",
+        "kind": 6,
+        "importPath": "src.experiments.curtsiesgameloop",
+        "description": "src.experiments.curtsiesgameloop",
+        "peekOfCode": "class World(object):\n    def __init__(self):\n        self.s = 'Hello'\n    def tick(self):\n        self.s += '|'\n        self.s = self.s[max(1, len(self.s)-80):]\n    def process_event(self, e):\n        self.s += str(e)\ndef realtime(fps=15):\n    world = World()",
+        "detail": "src.experiments.curtsiesgameloop",
+        "documentation": {}
+    },
+    {
+        "label": "realtime",
+        "kind": 2,
+        "importPath": "src.experiments.curtsiesgameloop",
+        "description": "src.experiments.curtsiesgameloop",
+        "peekOfCode": "def realtime(fps=15):\n    world = World()\n    dt = 1/fps\n    reactor = Input()\n    schedule_next_frame = reactor.scheduled_event_trigger(Frame)\n    schedule_next_frame(when=time.time())\n    with reactor:\n        for e in reactor:\n            if isinstance(e, Frame):\n                world.tick()",
+        "detail": "src.experiments.curtsiesgameloop",
+        "documentation": {}
+    },
+    {
+        "label": "term",
+        "kind": 5,
+        "importPath": "src.experiments.testblessings",
+        "description": "src.experiments.testblessings",
+        "peekOfCode": "term = Terminal()\nif term.does_styling:\n    with term.location(0, term.height - 1):\n        print('Progress: [=======>   ]')\nprint(term.bold('Important stuff'))",
+        "detail": "src.experiments.testblessings",
+        "documentation": {}
+    },
+    {
+        "label": "ASCII_Helper",
+        "kind": 6,
+        "importPath": "src.ascii_helper",
+        "description": "src.ascii_helper",
+        "peekOfCode": "class ASCII_Helper:\n    ROGUE =             '☻'\n    FULL_BLOCK =        '█'\n    LOWER_HALF_BLOCK =  '▄'\n    LEFT_HALF_BLOCK =   '▌'\n    RIGHT_HALF_BLOCK =  '▐'\n    UPPER_HALF_BLOCK =  '▀'\n    TAU =               'τ'\n    INFINITY =          '∞'\n    LIGHT_SHADE =       '░'",
+        "detail": "src.ascii_helper",
+        "documentation": {}
+    },
+    {
+        "label": "draw_stuff",
+        "kind": 2,
+        "importPath": "src.curses_draw_matrix",
+        "description": "src.curses_draw_matrix",
+        "peekOfCode": "def draw_stuff(m):\n    screen = curses.initscr()\n    screen.clear()\n    curses.curs_set(0)\n    counter = 0\n    index = 0\n    row = 0\n    col = 0\n    for r in m:\n        for c in r:",
+        "detail": "src.curses_draw_matrix",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "src.curses_draw_matrix",
+        "description": "src.curses_draw_matrix",
+        "peekOfCode": "matrix = [[1,0,1,0,1,0,1,1],[1,1,1,0,1,0,1,1],[0,1,1,1,0,1,0,0]]\n# matrix = [[1],[0],[0]]\n# m = matrix\ndraw_stuff(matrix)\n# Update the buffer, adding text at different locations\n# screen.addstr(0, 0, \"This string gets printed at position (0, 0)\")\n# screen.addstr(3, 1, \"Try Russian text: Привет\")  # Python 3 required for unicode\n# screen.addstr(4, 4, \"X\")\n# screen.addch(5, 5, \"Y\")\n# index = 0",
+        "detail": "src.curses_draw_matrix",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_ROW",
+        "kind": 5,
+        "importPath": "src.header",
+        "description": "src.header",
+        "peekOfCode": "MIN_ROW = 1\nAMULET_LEVEL = 26\nLAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040",
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "AMULET_LEVEL",
+        "kind": 5,
+        "importPath": "src.header",
+        "description": "src.header",
+        "peekOfCode": "AMULET_LEVEL = 26\nLAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040\nFLOOR       =  0o0100",
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "LAST_map",
+        "kind": 5,
+        "importPath": "src.header",
+        "description": "src.header",
+        "peekOfCode": "LAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040\nFLOOR       =  0o0100\nTUNNEL      =  0o0200",
+        "detail": "src.header",
+        "documentation": {}
+    },
+    {
+        "label": "Id",
+        "kind": 6,
+        "importPath": "src.id",
+        "description": "src.id",
+        "peekOfCode": "class Id:\n    ARMOR =     0x00100\n    WEAPON =    0x00200\n    SCROLL =    0x00400\n    POTION =    0x00800\n    GOLD =      0x01000\n    FOOD =      0x02000\n    WAND =      0x04000\n    RING =      0x08000\n    AMULET =    0x10000",
+        "detail": "src.id",
+        "documentation": {}
+    },
+    {
+        "label": "IdList",
+        "kind": 6,
+        "importPath": "src.idlist",
+        "description": "src.idlist",
+        "peekOfCode": "class IdList:\n    # @staticmethod\n    def __init__(self, mylist, status):\n        self.ids = self.create_id_list(mylist, status)\n    def create_id_list(self, mylist, status):\n        n = len(mylist) / 3\n        i = 0\n        n_int = math.floor(n)\n        ids = []\n        for k in range(n_int):",
+        "detail": "src.idlist",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "kind": 6,
+        "importPath": "src.item",
+        "description": "src.item",
+        "peekOfCode": "class Item(RowCol):\n    def __init__(self, level = 1, r = 1, c = 1):\n        super().__init__(r,c)\n        self.ichar = '?'\n        self.level = level\n        # self.row = r\n        # self.col = c\n    def __str__(self):\n        return '[ichar:' + str(self.ichar) + ' Level:' + str(self.level) + '; Row: ' + str(self.row) + ', Col:'+str(self.col) + ']'\n    def place_at(self,r,c,what):",
+        "detail": "src.item",
+        "documentation": {}
+    },
+    {
+        "label": "ItemVector",
+        "kind": 6,
+        "importPath": "src.itemvector",
+        "description": "src.itemvector",
+        "peekOfCode": "class ItemVector:\n    def __init__(self, n=None):\n        pass\n    def relevel(self, level):\n        # Enumeration e = elements()\n        # while (e.hasMoreElements()):\n        #     Item item = (Item) e.nextElement()\n        pass\n    def item_at(self, row, col):\n        i = self.length",
+        "detail": "src.itemvector",
+        "documentation": {}
+    },
+    {
+        "label": "Level",
+        "kind": 6,
+        "importPath": "src.level",
+        "description": "src.level",
+        "peekOfCode": "class Level:\n    def __init__(self, nrow, ncol, myself):\n        self.myself = myself # Rogue type\n        self.dummy  = None # Item\n        self.level_men      = []\n        self.level_toys     = []\n        self.level_monsters = []\n        self.level_traps    = []\n        self.level_doors    = []\n        self.map = [[]]     # 2D int array",
+        "detail": "src.level",
+        "documentation": {}
+    },
+    {
+        "label": "Man",
+        "kind": 6,
+        "importPath": "src.man",
+        "description": "src.man",
+        "peekOfCode": "class Man:\n    def __init__(self):\n        pass",
+        "detail": "src.man",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "src.message",
+        "description": "src.message",
+        "peekOfCode": "class Message:\n    def __init__(self):\n        pass",
+        "detail": "src.message",
+        "documentation": {}
+    },
+    {
+        "label": "Monster",
+        "kind": 6,
+        "importPath": "src.monster",
+        "description": "src.monster",
+        "peekOfCode": "class Monster:\n    def __init__(self):\n        pass",
+        "detail": "src.monster",
+        "documentation": {}
+    },
+    {
+        "label": "NineRoom",
+        "kind": 6,
+        "importPath": "src.nineroom",
+        "description": "src.nineroom",
+        "peekOfCode": "class NineRoom:\n    def __init__(self):\n        pass",
+        "detail": "src.nineroom",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "kind": 6,
+        "importPath": "src.persona",
+        "description": "src.persona",
+        "peekOfCode": "class Persona:\n    def __init__(self):\n        pass",
+        "detail": "src.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Potion",
+        "kind": 6,
+        "importPath": "src.potion",
+        "description": "src.potion",
+        "peekOfCode": "class Potion:\n    def __init__(self):\n        pass",
+        "detail": "src.potion",
+        "documentation": {}
+    },
+    {
+        "label": "RandomX",
+        "kind": 6,
+        "importPath": "src.randomx",
+        "description": "src.randomx",
+        "peekOfCode": "class RandomX(Random):\n    def __init__(self,l):\n        super().__init__(l)\n        self.P=0x7fffffff # Mask for random number generator (?)\n    def percent(self, n):\n        return (self.randint(0,self.P) & self.P) % 100 < n\n    def coin(self):\n        return 0 != (self.randint(0,self.P) & 1)\n    def get(self, n0, n1):\n        # return n0 >= n1 ? n0 : n0 + (self.nextInt() & P) % (1+n1-n0)",
+        "detail": "src.randomx",
+        "documentation": {}
+    },
+    {
+        "label": "Rogue",
+        "kind": 6,
+        "importPath": "src.rogue",
+        "description": "src.rogue",
+        "peekOfCode": "class Rogue:\n    def __init__(self):\n        self.gamer = None       # Thread\n        self.level = None       # Level\n        self.view_list = None   # Vector\n        self.flashers = None    # Vector\n        self.rand = None        # RandomX\n        self.keybuf = \"\"        # String\n        self.starttime = None   # long\n        self.pointsize = 12",
+        "detail": "src.rogue",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "kind": 6,
+        "importPath": "src.room",
+        "description": "src.room",
+        "peekOfCode": "class Room:\n    def __init__(self):\n        pass",
+        "detail": "src.room",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "kind": 6,
+        "importPath": "src.rowcol",
+        "description": "src.rowcol",
+        "peekOfCode": "class RowCol: \n        # row = None\n        # col = None\n        def __init__(self, r, c):\n            self.row = r\n            self.col = c\n        def __str__(self):\n            return '[' + str(self.row) + ' ' + str(self.col) + ']'\n# rc = RowCol(2,2)\n#print(str(rc))",
+        "detail": "src.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "Scroll",
+        "kind": 6,
+        "importPath": "src.scroll",
+        "description": "src.scroll",
+        "peekOfCode": "class Scroll:\n    def __init__(self):\n        pass",
+        "detail": "src.scroll",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "kind": 6,
+        "importPath": "src.tictactoe",
+        "description": "src.tictactoe",
+        "peekOfCode": "class Board:\n    \"\"\"\n    >>> Board().rows\n    ((' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '))\n    >>> Board().columns\n    ((' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '))\n    >>> Board().turn\n    0\n    >>> Board().whose_turn\n    'x'",
+        "detail": "src.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "opp",
+        "kind": 2,
+        "importPath": "src.tictactoe",
+        "description": "src.tictactoe",
+        "peekOfCode": "def opp(c):\n    \"\"\"\n    >>> opp('x'), opp('o')\n    ('o', 'x')\n    \"\"\"\n    return 'x' if c == 'o' else 'o'\ndef value(board, who='x'):\n    \"\"\"Returns the value of a board\n    >>> b = Board(); b._rows = [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]\n    >>> value(b)",
+        "detail": "src.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "value",
+        "kind": 2,
+        "importPath": "src.tictactoe",
+        "description": "src.tictactoe",
+        "peekOfCode": "def value(board, who='x'):\n    \"\"\"Returns the value of a board\n    >>> b = Board(); b._rows = [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]\n    >>> value(b)\n    1\n    >>> b = Board(); b._rows = [['o', 'o', 'o'], ['o', 'o', 'o'], ['o', 'o', 'o']]\n    >>> value(b)\n    -1\n    >>> b = Board(); b._rows = [['x', 'o', ' '], ['x', 'o', ' '], [' ', ' ', ' ']]\n    >>> value(b)",
+        "detail": "src.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "ai",
+        "kind": 2,
+        "importPath": "src.tictactoe",
+        "description": "src.tictactoe",
+        "peekOfCode": "def ai(board, who='x'):\n    \"\"\"\n    Returns best next board\n    >>> b = Board(); b._rows = [['x', 'o', ' '], ['x', 'o', ' '], [' ', ' ', ' ']]\n    >>> ai(b)\n    < Board |xo.xo.x..| >\n    \"\"\"\n    return sorted(board.possible(), key=lambda b: value(b, who))[-1]\ndef main():\n    with Input() as input_generator:",
+        "detail": "src.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.tictactoe",
+        "description": "src.tictactoe",
+        "peekOfCode": "def main():\n    with Input() as input_generator:\n        with FullscreenWindow() as window:\n            b = Board()\n            while True:\n                # window.render_to_terminal(b.draw_from_matrix())\n                # window.render_to_terminal('blah')\n                print('blah')\n                # for c in input_generator:\n                #     if c == '<ESC>':",
+        "detail": "src.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "Toy",
+        "kind": 6,
+        "importPath": "src.toy",
+        "description": "src.toy",
+        "peekOfCode": "class Toy:\n    def __init__(self):\n        pass",
+        "detail": "src.toy",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "src.view",
+        "description": "src.view",
+        "peekOfCode": "class View:\n    cmap = [curses.COLOR_BLACK] * 8\n    # cmap[0]= Color.lightGray;\n    # cmap[1]= Color.gray;\n    cmap[2]= curses.COLOR_BLACK\n    cmap[3]= curses.COLOR_WHITE\n    cmap[4]= curses.COLOR_RED\n    cmap[5]= curses.COLOR_YELLOW\n    # cmap[6]= new Color(128,0,0);\t// Dark red\n    cmap[7]= curses.COLOR_GREEN",
+        "detail": "src.view",
+        "documentation": {}
+    },
+    {
+        "label": "test_init",
+        "kind": 2,
+        "importPath": "tests.test_item",
+        "description": "tests.test_item",
+        "peekOfCode": "def test_init():\n    i = Item()\n    assert i != None",
+        "detail": "tests.test_item",
+        "documentation": {}
+    },
+    {
+        "label": "test_init",
+        "kind": 2,
+        "importPath": "tests.test_itemvector",
+        "description": "tests.test_itemvector",
+        "peekOfCode": "def test_init():\n    i = ItemVector()\n    assert i != None",
+        "detail": "tests.test_itemvector",
+        "documentation": {}
+    },
+    {
+        "label": "test_level",
+        "kind": 2,
+        "importPath": "tests.test_level",
+        "description": "tests.test_level",
+        "peekOfCode": "def test_level():\n    level = Level(3,3,Rogue())\n    assert level != None",
+        "detail": "tests.test_level",
+        "documentation": {}
+    },
+    {
+        "label": "test_sample",
+        "kind": 2,
+        "importPath": "tests.test_randomx",
+        "description": "tests.test_randomx",
+        "peekOfCode": "def test_sample():\n    assert 1 == 1",
+        "detail": "tests.test_randomx",
+        "documentation": {}
+    },
+    {
+        "label": "test_create_rowcol",
+        "kind": 2,
+        "importPath": "tests.test_rowcol",
+        "description": "tests.test_rowcol",
+        "peekOfCode": "def test_create_rowcol():\n    rc = RowCol(1,1)\n    assert rc != None",
+        "detail": "tests.test_rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "test_sample",
+        "kind": 2,
+        "importPath": "tests.test_sample",
+        "description": "tests.test_sample",
+        "peekOfCode": "def test_sample():\n    assert 1 == 1",
+        "detail": "tests.test_sample",
+        "documentation": {}
+    }
+]
