@@ -41,14 +41,6 @@
         "documentation": {}
     },
     {
-        "label": "RowCol",
-        "importPath": "src.rowcol",
-        "description": "src.rowcol",
-        "isExtraImport": true,
-        "detail": "src.rowcol",
-        "documentation": {}
-    },
-    {
         "label": "Item",
         "importPath": "src.item",
         "description": "src.item",
@@ -62,22 +54,6 @@
         "description": "src.item",
         "isExtraImport": true,
         "detail": "src.item",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "src.item",
-        "description": "src.item",
-        "isExtraImport": true,
-        "detail": "src.item",
-        "documentation": {}
-    },
-    {
-        "label": "RandomX",
-        "importPath": "src.randomx",
-        "description": "src.randomx",
-        "isExtraImport": true,
-        "detail": "src.randomx",
         "documentation": {}
     },
     {
@@ -610,6 +586,38 @@
         "documentation": {}
     },
     {
+        "label": "ASCII_Helper",
+        "importPath": "src.ascii_helper",
+        "description": "src.ascii_helper",
+        "isExtraImport": true,
+        "detail": "src.ascii_helper",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerModel",
+        "importPath": "src.player_model",
+        "description": "src.player_model",
+        "isExtraImport": true,
+        "detail": "src.player_model",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerModel",
+        "importPath": "src.player_model",
+        "description": "src.player_model",
+        "isExtraImport": true,
+        "detail": "src.player_model",
+        "documentation": {}
+    },
+    {
+        "label": "Attributes",
+        "importPath": "src.attributes_model",
+        "description": "src.attributes_model",
+        "isExtraImport": true,
+        "detail": "src.attributes_model",
+        "documentation": {}
+    },
+    {
         "label": "Level",
         "importPath": "src.level",
         "description": "src.level",
@@ -626,102 +634,387 @@
         "documentation": {}
     },
     {
+        "label": "LevelModel",
+        "importPath": "src.level_model",
+        "description": "src.level_model",
+        "isExtraImport": true,
+        "detail": "src.level_model",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerController",
+        "importPath": "src.player_controller",
+        "description": "src.player_controller",
+        "isExtraImport": true,
+        "detail": "src.player_controller",
+        "documentation": {}
+    },
+    {
+        "label": "LevelView",
+        "importPath": "src.view.level_view",
+        "description": "src.view.level_view",
+        "isExtraImport": true,
+        "detail": "src.view.level_view",
+        "documentation": {}
+    },
+    {
         "label": "main",
         "kind": 2,
-        "importPath": "src.experiments.cursesdemo",
-        "description": "src.experiments.cursesdemo",
+        "importPath": "src.archive.experiments.cursesdemo",
+        "description": "src.archive.experiments.cursesdemo",
         "peekOfCode": "def main():\n    \"\"\"\n    The curses.wrapper function is an optional function that\n    encapsulates a number of lower-level setup and teardown\n    functions, and takes a single function to run when\n    the initializations have taken place.\n    \"\"\"\n    curses.wrapper(curses_main)\ndef curses_main(w):\n    \"\"\"",
-        "detail": "src.experiments.cursesdemo",
+        "detail": "src.archive.experiments.cursesdemo",
         "documentation": {}
     },
     {
         "label": "curses_main",
         "kind": 2,
-        "importPath": "src.experiments.cursesdemo",
-        "description": "src.experiments.cursesdemo",
+        "importPath": "src.archive.experiments.cursesdemo",
+        "description": "src.archive.experiments.cursesdemo",
         "peekOfCode": "def curses_main(w):\n    \"\"\"\n    This function is called curses_main to emphasise that it is\n    the logical if not actual main function, called by curses.wrapper.\n    Its purpose is to call several other functions to demonstrate\n    some of the functionality of curses.\n    \"\"\"\n    w.addstr(\"-----------------\\n\")\n    w.addstr(\"| codedrome.com |\\n\")\n    w.addstr(\"| curses demo   |\\n\")",
-        "detail": "src.experiments.cursesdemo",
+        "detail": "src.archive.experiments.cursesdemo",
         "documentation": {}
     },
     {
         "label": "printing",
         "kind": 2,
-        "importPath": "src.experiments.cursesdemo",
-        "description": "src.experiments.cursesdemo",
+        "importPath": "src.archive.experiments.cursesdemo",
+        "description": "src.archive.experiments.cursesdemo",
         "peekOfCode": "def printing(w):\n    \"\"\"\n    A few simple demonstrations of printing.\n    \"\"\"\n    w.addstr(\"This was printed using addstr\\n\\n\")\n    w.refresh()\n    w.addstr(\"The following letter was printed using addch:- \")\n    w.addch('a')\n    w.refresh()\n    w.addstr(\"\\n\\nThese numbers were printed using addstr:-\\n{}\\n{:.6f}\\n\".format(123, 456.789))",
-        "detail": "src.experiments.cursesdemo",
+        "detail": "src.archive.experiments.cursesdemo",
         "documentation": {}
     },
     {
         "label": "moving_and_sleeping",
         "kind": 2,
-        "importPath": "src.experiments.cursesdemo",
-        "description": "src.experiments.cursesdemo",
+        "importPath": "src.archive.experiments.cursesdemo",
+        "description": "src.archive.experiments.cursesdemo",
         "peekOfCode": "def moving_and_sleeping(w):\n    \"\"\"\n    Demonstrates moving the cursor to a specified position before printing,\n    and sleeping for a specified period of time.\n    These are useful for very basic animations.\n    \"\"\"\n    row = 5\n    col = 0\n    curses.curs_set(False)\n    for c in range(65, 91):",
-        "detail": "src.experiments.cursesdemo",
+        "detail": "src.archive.experiments.cursesdemo",
         "documentation": {}
     },
     {
         "label": "colouring",
         "kind": 2,
-        "importPath": "src.experiments.cursesdemo",
-        "description": "src.experiments.cursesdemo",
+        "importPath": "src.archive.experiments.cursesdemo",
+        "description": "src.archive.experiments.cursesdemo",
         "peekOfCode": "def colouring(w):\n    \"\"\"\n    Demonstration of setting background and foreground colours.\n    \"\"\"\n    if curses.has_colors():\n        curses.init_pair(1, curses.COLOR_YELLOW, curses.COLOR_RED)\n        curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_GREEN)\n        curses.init_pair(3, curses.COLOR_MAGENTA, curses.COLOR_CYAN)\n        w.addstr(\"Yellow on red\\n\\n\", curses.color_pair(1))\n        w.refresh()",
-        "detail": "src.experiments.cursesdemo",
+        "detail": "src.archive.experiments.cursesdemo",
         "documentation": {}
     },
     {
         "label": "draw_menu",
         "kind": 2,
-        "importPath": "src.experiments.cursesmenu",
-        "description": "src.experiments.cursesmenu",
+        "importPath": "src.archive.experiments.cursesmenu",
+        "description": "src.archive.experiments.cursesmenu",
         "peekOfCode": "def draw_menu(stdscr):\n    k = 0\n    cursor_x = 0\n    cursor_y = 0\n    # Clear and refresh the screen for a blank canvas\n    stdscr.clear()\n    stdscr.refresh()\n    # Start colors in curses\n    curses.start_color()\n    curses.init_pair(1, curses.COLOR_CYAN, curses.COLOR_BLACK)",
-        "detail": "src.experiments.cursesmenu",
+        "detail": "src.archive.experiments.cursesmenu",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "src.experiments.cursesmenu",
-        "description": "src.experiments.cursesmenu",
+        "importPath": "src.archive.experiments.cursesmenu",
+        "description": "src.archive.experiments.cursesmenu",
         "peekOfCode": "def main():\n    curses.wrapper(draw_menu)\nif __name__=='__main__':\n    main()",
-        "detail": "src.experiments.cursesmenu",
+        "detail": "src.archive.experiments.cursesmenu",
         "documentation": {}
     },
     {
         "label": "Frame",
         "kind": 6,
-        "importPath": "src.experiments.curtsiesgameloop",
-        "description": "src.experiments.curtsiesgameloop",
+        "importPath": "src.archive.experiments.curtsiesgameloop",
+        "description": "src.archive.experiments.curtsiesgameloop",
         "peekOfCode": "class Frame(curtsies.events.ScheduledEvent):\n    pass\nclass World(object):\n    def __init__(self):\n        self.s = 'Hello'\n    def tick(self):\n        self.s += '|'\n        self.s = self.s[max(1, len(self.s)-80):]\n    def process_event(self, e):\n        self.s += str(e)",
-        "detail": "src.experiments.curtsiesgameloop",
+        "detail": "src.archive.experiments.curtsiesgameloop",
         "documentation": {}
     },
     {
         "label": "World",
         "kind": 6,
-        "importPath": "src.experiments.curtsiesgameloop",
-        "description": "src.experiments.curtsiesgameloop",
+        "importPath": "src.archive.experiments.curtsiesgameloop",
+        "description": "src.archive.experiments.curtsiesgameloop",
         "peekOfCode": "class World(object):\n    def __init__(self):\n        self.s = 'Hello'\n    def tick(self):\n        self.s += '|'\n        self.s = self.s[max(1, len(self.s)-80):]\n    def process_event(self, e):\n        self.s += str(e)\ndef realtime(fps=15):\n    world = World()",
-        "detail": "src.experiments.curtsiesgameloop",
+        "detail": "src.archive.experiments.curtsiesgameloop",
         "documentation": {}
     },
     {
         "label": "realtime",
         "kind": 2,
-        "importPath": "src.experiments.curtsiesgameloop",
-        "description": "src.experiments.curtsiesgameloop",
+        "importPath": "src.archive.experiments.curtsiesgameloop",
+        "description": "src.archive.experiments.curtsiesgameloop",
         "peekOfCode": "def realtime(fps=15):\n    world = World()\n    dt = 1/fps\n    reactor = Input()\n    schedule_next_frame = reactor.scheduled_event_trigger(Frame)\n    schedule_next_frame(when=time.time())\n    with reactor:\n        for e in reactor:\n            if isinstance(e, Frame):\n                world.tick()",
-        "detail": "src.experiments.curtsiesgameloop",
+        "detail": "src.archive.experiments.curtsiesgameloop",
         "documentation": {}
     },
     {
         "label": "term",
         "kind": 5,
-        "importPath": "src.experiments.testblessings",
-        "description": "src.experiments.testblessings",
+        "importPath": "src.archive.experiments.testblessings",
+        "description": "src.archive.experiments.testblessings",
         "peekOfCode": "term = Terminal()\nif term.does_styling:\n    with term.location(0, term.height - 1):\n        print('Progress: [=======>   ]')\nprint(term.bold('Important stuff'))",
-        "detail": "src.experiments.testblessings",
+        "detail": "src.archive.experiments.testblessings",
+        "documentation": {}
+    },
+    {
+        "label": "draw_stuff",
+        "kind": 2,
+        "importPath": "src.archive.curses_draw_matrix",
+        "description": "src.archive.curses_draw_matrix",
+        "peekOfCode": "def draw_stuff(m):\n    screen = curses.initscr()\n    screen.clear()\n    curses.curs_set(0)\n    counter = 0\n    index = 0\n    row = 0\n    col = 0\n    for r in m:\n        for c in r:",
+        "detail": "src.archive.curses_draw_matrix",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "src.archive.curses_draw_matrix",
+        "description": "src.archive.curses_draw_matrix",
+        "peekOfCode": "matrix = [[1,0,1,0,1,0,1,1],[1,1,1,0,1,0,1,1],[0,1,1,1,0,1,0,0]]\n# matrix = [[1],[0],[0]]\n# m = matrix\ndraw_stuff(matrix)\n# Update the buffer, adding text at different locations\n# screen.addstr(0, 0, \"This string gets printed at position (0, 0)\")\n# screen.addstr(3, 1, \"Try Russian text: Привет\")  # Python 3 required for unicode\n# screen.addstr(4, 4, \"X\")\n# screen.addch(5, 5, \"Y\")\n# index = 0",
+        "detail": "src.archive.curses_draw_matrix",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_ROW",
+        "kind": 5,
+        "importPath": "src.archive.header",
+        "description": "src.archive.header",
+        "peekOfCode": "MIN_ROW = 1\nAMULET_LEVEL = 26\nLAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040",
+        "detail": "src.archive.header",
+        "documentation": {}
+    },
+    {
+        "label": "AMULET_LEVEL",
+        "kind": 5,
+        "importPath": "src.archive.header",
+        "description": "src.archive.header",
+        "peekOfCode": "AMULET_LEVEL = 26\nLAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040\nFLOOR       =  0o0100",
+        "detail": "src.archive.header",
+        "documentation": {}
+    },
+    {
+        "label": "LAST_map",
+        "kind": 5,
+        "importPath": "src.archive.header",
+        "description": "src.archive.header",
+        "peekOfCode": "LAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040\nFLOOR       =  0o0100\nTUNNEL      =  0o0200",
+        "detail": "src.archive.header",
+        "documentation": {}
+    },
+    {
+        "label": "Id",
+        "kind": 6,
+        "importPath": "src.archive.id",
+        "description": "src.archive.id",
+        "peekOfCode": "class Id:\n    ARMOR =     0x00100\n    WEAPON =    0x00200\n    SCROLL =    0x00400\n    POTION =    0x00800\n    GOLD =      0x01000\n    FOOD =      0x02000\n    WAND =      0x04000\n    RING =      0x08000\n    AMULET =    0x10000",
+        "detail": "src.archive.id",
+        "documentation": {}
+    },
+    {
+        "label": "IdList",
+        "kind": 6,
+        "importPath": "src.archive.idlist",
+        "description": "src.archive.idlist",
+        "peekOfCode": "class IdList:\n    # @staticmethod\n    def __init__(self, mylist, status):\n        self.ids = self.create_id_list(mylist, status)\n    def create_id_list(self, mylist, status):\n        n = len(mylist) / 3\n        i = 0\n        n_int = math.floor(n)\n        ids = []\n        for k in range(n_int):",
+        "detail": "src.archive.idlist",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "kind": 6,
+        "importPath": "src.archive.item",
+        "description": "src.archive.item",
+        "peekOfCode": "class Item(RowCol):\n    def __init__(self, level = 1, r = 1, c = 1):\n        super().__init__(r,c)\n        self.ichar = '?'\n        self.level = level\n        # self.row = r\n        # self.col = c\n    def __str__(self):\n        return '[ichar:' + str(self.ichar) + ' Level:' + str(self.level) + '; Row: ' + str(self.row) + ', Col:'+str(self.col) + ']'\n    def place_at(self,r,c,what):",
+        "detail": "src.archive.item",
+        "documentation": {}
+    },
+    {
+        "label": "ItemVector",
+        "kind": 6,
+        "importPath": "src.archive.itemvector",
+        "description": "src.archive.itemvector",
+        "peekOfCode": "class ItemVector:\n    def __init__(self, n=None):\n        pass\n    def relevel(self, level):\n        # Enumeration e = elements()\n        # while (e.hasMoreElements()):\n        #     Item item = (Item) e.nextElement()\n        pass\n    def item_at(self, row, col):\n        i = self.length",
+        "detail": "src.archive.itemvector",
+        "documentation": {}
+    },
+    {
+        "label": "Level",
+        "kind": 6,
+        "importPath": "src.archive.level",
+        "description": "src.archive.level",
+        "peekOfCode": "class Level:\n    def __init__(self, nrow, ncol, myself):\n        self.myself = myself # Rogue type\n        self.dummy  = None # Item\n        self.level_men      = []\n        self.level_toys     = []\n        self.level_monsters = []\n        self.level_traps    = []\n        self.level_doors    = []\n        self.map = [[]]     # 2D int array",
+        "detail": "src.archive.level",
+        "documentation": {}
+    },
+    {
+        "label": "Man",
+        "kind": 6,
+        "importPath": "src.archive.man",
+        "description": "src.archive.man",
+        "peekOfCode": "class Man:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.man",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "src.archive.message",
+        "description": "src.archive.message",
+        "peekOfCode": "class Message:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.message",
+        "documentation": {}
+    },
+    {
+        "label": "Monster",
+        "kind": 6,
+        "importPath": "src.archive.monster",
+        "description": "src.archive.monster",
+        "peekOfCode": "class Monster:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.monster",
+        "documentation": {}
+    },
+    {
+        "label": "NineRoom",
+        "kind": 6,
+        "importPath": "src.archive.nineroom",
+        "description": "src.archive.nineroom",
+        "peekOfCode": "class NineRoom:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.nineroom",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "kind": 6,
+        "importPath": "src.archive.persona",
+        "description": "src.archive.persona",
+        "peekOfCode": "class Persona:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Potion",
+        "kind": 6,
+        "importPath": "src.archive.potion",
+        "description": "src.archive.potion",
+        "peekOfCode": "class Potion:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.potion",
+        "documentation": {}
+    },
+    {
+        "label": "RandomX",
+        "kind": 6,
+        "importPath": "src.archive.randomx",
+        "description": "src.archive.randomx",
+        "peekOfCode": "class RandomX(Random):\n    def __init__(self,l):\n        super().__init__(l)\n        self.P=0x7fffffff # Mask for random number generator (?)\n    def percent(self, n):\n        return (self.randint(0,self.P) & self.P) % 100 < n\n    def coin(self):\n        return 0 != (self.randint(0,self.P) & 1)\n    def get(self, n0, n1):\n        # return n0 >= n1 ? n0 : n0 + (self.nextInt() & P) % (1+n1-n0)",
+        "detail": "src.archive.randomx",
+        "documentation": {}
+    },
+    {
+        "label": "Rogue",
+        "kind": 6,
+        "importPath": "src.archive.rogue",
+        "description": "src.archive.rogue",
+        "peekOfCode": "class Rogue:\n    def __init__(self):\n        self.gamer = None       # Thread\n        self.level = None       # Level\n        self.view_list = None   # Vector\n        self.flashers = None    # Vector\n        self.rand = None        # RandomX\n        self.keybuf = \"\"        # String\n        self.starttime = None   # long\n        self.pointsize = 12",
+        "detail": "src.archive.rogue",
+        "documentation": {}
+    },
+    {
+        "label": "Room",
+        "kind": 6,
+        "importPath": "src.archive.room",
+        "description": "src.archive.room",
+        "peekOfCode": "class Room:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.room",
+        "documentation": {}
+    },
+    {
+        "label": "RowCol",
+        "kind": 6,
+        "importPath": "src.archive.rowcol",
+        "description": "src.archive.rowcol",
+        "peekOfCode": "class RowCol: \n        # row = None\n        # col = None\n        def __init__(self, r, c):\n            self.row = r\n            self.col = c\n        def __str__(self):\n            return '[' + str(self.row) + ' ' + str(self.col) + ']'\n# rc = RowCol(2,2)\n#print(str(rc))",
+        "detail": "src.archive.rowcol",
+        "documentation": {}
+    },
+    {
+        "label": "Scroll",
+        "kind": 6,
+        "importPath": "src.archive.scroll",
+        "description": "src.archive.scroll",
+        "peekOfCode": "class Scroll:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.scroll",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "kind": 6,
+        "importPath": "src.archive.tictactoe",
+        "description": "src.archive.tictactoe",
+        "peekOfCode": "class Board:\n    \"\"\"\n    >>> Board().rows\n    ((' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '))\n    >>> Board().columns\n    ((' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '))\n    >>> Board().turn\n    0\n    >>> Board().whose_turn\n    'x'",
+        "detail": "src.archive.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "opp",
+        "kind": 2,
+        "importPath": "src.archive.tictactoe",
+        "description": "src.archive.tictactoe",
+        "peekOfCode": "def opp(c):\n    \"\"\"\n    >>> opp('x'), opp('o')\n    ('o', 'x')\n    \"\"\"\n    return 'x' if c == 'o' else 'o'\ndef value(board, who='x'):\n    \"\"\"Returns the value of a board\n    >>> b = Board(); b._rows = [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]\n    >>> value(b)",
+        "detail": "src.archive.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "value",
+        "kind": 2,
+        "importPath": "src.archive.tictactoe",
+        "description": "src.archive.tictactoe",
+        "peekOfCode": "def value(board, who='x'):\n    \"\"\"Returns the value of a board\n    >>> b = Board(); b._rows = [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]\n    >>> value(b)\n    1\n    >>> b = Board(); b._rows = [['o', 'o', 'o'], ['o', 'o', 'o'], ['o', 'o', 'o']]\n    >>> value(b)\n    -1\n    >>> b = Board(); b._rows = [['x', 'o', ' '], ['x', 'o', ' '], [' ', ' ', ' ']]\n    >>> value(b)",
+        "detail": "src.archive.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "ai",
+        "kind": 2,
+        "importPath": "src.archive.tictactoe",
+        "description": "src.archive.tictactoe",
+        "peekOfCode": "def ai(board, who='x'):\n    \"\"\"\n    Returns best next board\n    >>> b = Board(); b._rows = [['x', 'o', ' '], ['x', 'o', ' '], [' ', ' ', ' ']]\n    >>> ai(b)\n    < Board |xo.xo.x..| >\n    \"\"\"\n    return sorted(board.possible(), key=lambda b: value(b, who))[-1]\ndef main():\n    with Input() as input_generator:",
+        "detail": "src.archive.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.archive.tictactoe",
+        "description": "src.archive.tictactoe",
+        "peekOfCode": "def main():\n    with Input() as input_generator:\n        with FullscreenWindow() as window:\n            b = Board()\n            while True:\n                # window.render_to_terminal(b.draw_from_matrix())\n                # window.render_to_terminal('blah')\n                print('blah')\n                # for c in input_generator:\n                #     if c == '<ESC>':",
+        "detail": "src.archive.tictactoe",
+        "documentation": {}
+    },
+    {
+        "label": "Toy",
+        "kind": 6,
+        "importPath": "src.archive.toy",
+        "description": "src.archive.toy",
+        "peekOfCode": "class Toy:\n    def __init__(self):\n        pass",
+        "detail": "src.archive.toy",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "src.archive.view",
+        "description": "src.archive.view",
+        "peekOfCode": "class View:\n    cmap = [curses.COLOR_BLACK] * 8\n    # cmap[0]= Color.lightGray;\n    # cmap[1]= Color.gray;\n    cmap[2]= curses.COLOR_BLACK\n    cmap[3]= curses.COLOR_WHITE\n    cmap[4]= curses.COLOR_RED\n    cmap[5]= curses.COLOR_YELLOW\n    # cmap[6]= new Color(128,0,0);\t// Dark red\n    cmap[7]= curses.COLOR_GREEN",
+        "detail": "src.archive.view",
+        "documentation": {}
+    },
+    {
+        "label": "LevelView",
+        "kind": 6,
+        "importPath": "src.view.level_view",
+        "description": "src.view.level_view",
+        "peekOfCode": "class LevelView:\n    @staticmethod\n    def draw_stuff(m):\n        screen = curses.initscr()\n        screen.clear()\n        curses.curs_set(0)\n        counter = 0\n        index = 0\n        row = 0\n        col = 0",
+        "detail": "src.view.level_view",
         "documentation": {}
     },
     {
@@ -734,255 +1027,39 @@
         "documentation": {}
     },
     {
-        "label": "draw_stuff",
-        "kind": 2,
-        "importPath": "src.curses_draw_matrix",
-        "description": "src.curses_draw_matrix",
-        "peekOfCode": "def draw_stuff(m):\n    screen = curses.initscr()\n    screen.clear()\n    curses.curs_set(0)\n    counter = 0\n    index = 0\n    row = 0\n    col = 0\n    for r in m:\n        for c in r:",
-        "detail": "src.curses_draw_matrix",
-        "documentation": {}
-    },
-    {
-        "label": "matrix",
-        "kind": 5,
-        "importPath": "src.curses_draw_matrix",
-        "description": "src.curses_draw_matrix",
-        "peekOfCode": "matrix = [[1,0,1,0,1,0,1,1],[1,1,1,0,1,0,1,1],[0,1,1,1,0,1,0,0]]\n# matrix = [[1],[0],[0]]\n# m = matrix\ndraw_stuff(matrix)\n# Update the buffer, adding text at different locations\n# screen.addstr(0, 0, \"This string gets printed at position (0, 0)\")\n# screen.addstr(3, 1, \"Try Russian text: Привет\")  # Python 3 required for unicode\n# screen.addstr(4, 4, \"X\")\n# screen.addch(5, 5, \"Y\")\n# index = 0",
-        "detail": "src.curses_draw_matrix",
-        "documentation": {}
-    },
-    {
-        "label": "MIN_ROW",
-        "kind": 5,
-        "importPath": "src.header",
-        "description": "src.header",
-        "peekOfCode": "MIN_ROW = 1\nAMULET_LEVEL = 26\nLAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040",
-        "detail": "src.header",
-        "documentation": {}
-    },
-    {
-        "label": "AMULET_LEVEL",
-        "kind": 5,
-        "importPath": "src.header",
-        "description": "src.header",
-        "peekOfCode": "AMULET_LEVEL = 26\nLAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040\nFLOOR       =  0o0100",
-        "detail": "src.header",
-        "documentation": {}
-    },
-    {
-        "label": "LAST_map",
-        "kind": 5,
-        "importPath": "src.header",
-        "description": "src.header",
-        "peekOfCode": "LAST_map = 99\n# Values for Level Map\nTOY         =    0o01\nMONSTER     =    0o02\nSTAIRS      =    0o04\nHORWALL     =   0o010\nVERTWALL    =   0o020\nDOOR        =   0o040\nFLOOR       =  0o0100\nTUNNEL      =  0o0200",
-        "detail": "src.header",
-        "documentation": {}
-    },
-    {
-        "label": "Id",
+        "label": "Attributes",
         "kind": 6,
-        "importPath": "src.id",
-        "description": "src.id",
-        "peekOfCode": "class Id:\n    ARMOR =     0x00100\n    WEAPON =    0x00200\n    SCROLL =    0x00400\n    POTION =    0x00800\n    GOLD =      0x01000\n    FOOD =      0x02000\n    WAND =      0x04000\n    RING =      0x08000\n    AMULET =    0x10000",
-        "detail": "src.id",
+        "importPath": "src.attributes_model",
+        "description": "src.attributes_model",
+        "peekOfCode": "class Attributes:\n    def __init__(self):\n        self.health = 100\n        self.maxHealth = 100\n        self.strength = 10\n        self.defense = 10\n        self.speed = 10\n        self.intelligence = 10\n        self.charisma = 10\n        self.luck = 10",
+        "detail": "src.attributes_model",
         "documentation": {}
     },
     {
-        "label": "IdList",
+        "label": "LevelModel",
         "kind": 6,
-        "importPath": "src.idlist",
-        "description": "src.idlist",
-        "peekOfCode": "class IdList:\n    # @staticmethod\n    def __init__(self, mylist, status):\n        self.ids = self.create_id_list(mylist, status)\n    def create_id_list(self, mylist, status):\n        n = len(mylist) / 3\n        i = 0\n        n_int = math.floor(n)\n        ids = []\n        for k in range(n_int):",
-        "detail": "src.idlist",
+        "importPath": "src.level_model",
+        "description": "src.level_model",
+        "peekOfCode": "class LevelModel:\n    def __init__(self):\n        self.level = 1\n        self.playerModel = PlayerModel()\n        self.layout = self.generateTestLayout()\n        self.placePlayer([2,2])\n    def generateTestLayout(self):\n        layout = self.generateTestRoom()\n        # playerPos = self.playerModel.getPosition()\n        return layout",
+        "detail": "src.level_model",
         "documentation": {}
     },
     {
-        "label": "Item",
+        "label": "PlayerController",
         "kind": 6,
-        "importPath": "src.item",
-        "description": "src.item",
-        "peekOfCode": "class Item(RowCol):\n    def __init__(self, level = 1, r = 1, c = 1):\n        super().__init__(r,c)\n        self.ichar = '?'\n        self.level = level\n        # self.row = r\n        # self.col = c\n    def __str__(self):\n        return '[ichar:' + str(self.ichar) + ' Level:' + str(self.level) + '; Row: ' + str(self.row) + ', Col:'+str(self.col) + ']'\n    def place_at(self,r,c,what):",
-        "detail": "src.item",
+        "importPath": "src.player_controller",
+        "description": "src.player_controller",
+        "peekOfCode": "class PlayerController:\n    WEST = 0x01\n    EAST = 0x02\n    NORTH = 0x04\n    SOUTH = 0x08\n    NW = NORTH|WEST\n    NE = NORTH|EAST\n    SW = SOUTH|WEST\n    SE = SOUTH|EAST\n    def __init__(self, modelRef):",
+        "detail": "src.player_controller",
         "documentation": {}
     },
     {
-        "label": "ItemVector",
+        "label": "PlayerModel",
         "kind": 6,
-        "importPath": "src.itemvector",
-        "description": "src.itemvector",
-        "peekOfCode": "class ItemVector:\n    def __init__(self, n=None):\n        pass\n    def relevel(self, level):\n        # Enumeration e = elements()\n        # while (e.hasMoreElements()):\n        #     Item item = (Item) e.nextElement()\n        pass\n    def item_at(self, row, col):\n        i = self.length",
-        "detail": "src.itemvector",
-        "documentation": {}
-    },
-    {
-        "label": "Level",
-        "kind": 6,
-        "importPath": "src.level",
-        "description": "src.level",
-        "peekOfCode": "class Level:\n    def __init__(self, nrow, ncol, myself):\n        self.myself = myself # Rogue type\n        self.dummy  = None # Item\n        self.level_men      = []\n        self.level_toys     = []\n        self.level_monsters = []\n        self.level_traps    = []\n        self.level_doors    = []\n        self.map = [[]]     # 2D int array",
-        "detail": "src.level",
-        "documentation": {}
-    },
-    {
-        "label": "Man",
-        "kind": 6,
-        "importPath": "src.man",
-        "description": "src.man",
-        "peekOfCode": "class Man:\n    def __init__(self):\n        pass",
-        "detail": "src.man",
-        "documentation": {}
-    },
-    {
-        "label": "Message",
-        "kind": 6,
-        "importPath": "src.message",
-        "description": "src.message",
-        "peekOfCode": "class Message:\n    def __init__(self):\n        pass",
-        "detail": "src.message",
-        "documentation": {}
-    },
-    {
-        "label": "Monster",
-        "kind": 6,
-        "importPath": "src.monster",
-        "description": "src.monster",
-        "peekOfCode": "class Monster:\n    def __init__(self):\n        pass",
-        "detail": "src.monster",
-        "documentation": {}
-    },
-    {
-        "label": "NineRoom",
-        "kind": 6,
-        "importPath": "src.nineroom",
-        "description": "src.nineroom",
-        "peekOfCode": "class NineRoom:\n    def __init__(self):\n        pass",
-        "detail": "src.nineroom",
-        "documentation": {}
-    },
-    {
-        "label": "Persona",
-        "kind": 6,
-        "importPath": "src.persona",
-        "description": "src.persona",
-        "peekOfCode": "class Persona:\n    def __init__(self):\n        pass",
-        "detail": "src.persona",
-        "documentation": {}
-    },
-    {
-        "label": "Potion",
-        "kind": 6,
-        "importPath": "src.potion",
-        "description": "src.potion",
-        "peekOfCode": "class Potion:\n    def __init__(self):\n        pass",
-        "detail": "src.potion",
-        "documentation": {}
-    },
-    {
-        "label": "RandomX",
-        "kind": 6,
-        "importPath": "src.randomx",
-        "description": "src.randomx",
-        "peekOfCode": "class RandomX(Random):\n    def __init__(self,l):\n        super().__init__(l)\n        self.P=0x7fffffff # Mask for random number generator (?)\n    def percent(self, n):\n        return (self.randint(0,self.P) & self.P) % 100 < n\n    def coin(self):\n        return 0 != (self.randint(0,self.P) & 1)\n    def get(self, n0, n1):\n        # return n0 >= n1 ? n0 : n0 + (self.nextInt() & P) % (1+n1-n0)",
-        "detail": "src.randomx",
-        "documentation": {}
-    },
-    {
-        "label": "Rogue",
-        "kind": 6,
-        "importPath": "src.rogue",
-        "description": "src.rogue",
-        "peekOfCode": "class Rogue:\n    def __init__(self):\n        self.gamer = None       # Thread\n        self.level = None       # Level\n        self.view_list = None   # Vector\n        self.flashers = None    # Vector\n        self.rand = None        # RandomX\n        self.keybuf = \"\"        # String\n        self.starttime = None   # long\n        self.pointsize = 12",
-        "detail": "src.rogue",
-        "documentation": {}
-    },
-    {
-        "label": "Room",
-        "kind": 6,
-        "importPath": "src.room",
-        "description": "src.room",
-        "peekOfCode": "class Room:\n    def __init__(self):\n        pass",
-        "detail": "src.room",
-        "documentation": {}
-    },
-    {
-        "label": "RowCol",
-        "kind": 6,
-        "importPath": "src.rowcol",
-        "description": "src.rowcol",
-        "peekOfCode": "class RowCol: \n        # row = None\n        # col = None\n        def __init__(self, r, c):\n            self.row = r\n            self.col = c\n        def __str__(self):\n            return '[' + str(self.row) + ' ' + str(self.col) + ']'\n# rc = RowCol(2,2)\n#print(str(rc))",
-        "detail": "src.rowcol",
-        "documentation": {}
-    },
-    {
-        "label": "Scroll",
-        "kind": 6,
-        "importPath": "src.scroll",
-        "description": "src.scroll",
-        "peekOfCode": "class Scroll:\n    def __init__(self):\n        pass",
-        "detail": "src.scroll",
-        "documentation": {}
-    },
-    {
-        "label": "Board",
-        "kind": 6,
-        "importPath": "src.tictactoe",
-        "description": "src.tictactoe",
-        "peekOfCode": "class Board:\n    \"\"\"\n    >>> Board().rows\n    ((' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '))\n    >>> Board().columns\n    ((' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '))\n    >>> Board().turn\n    0\n    >>> Board().whose_turn\n    'x'",
-        "detail": "src.tictactoe",
-        "documentation": {}
-    },
-    {
-        "label": "opp",
-        "kind": 2,
-        "importPath": "src.tictactoe",
-        "description": "src.tictactoe",
-        "peekOfCode": "def opp(c):\n    \"\"\"\n    >>> opp('x'), opp('o')\n    ('o', 'x')\n    \"\"\"\n    return 'x' if c == 'o' else 'o'\ndef value(board, who='x'):\n    \"\"\"Returns the value of a board\n    >>> b = Board(); b._rows = [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]\n    >>> value(b)",
-        "detail": "src.tictactoe",
-        "documentation": {}
-    },
-    {
-        "label": "value",
-        "kind": 2,
-        "importPath": "src.tictactoe",
-        "description": "src.tictactoe",
-        "peekOfCode": "def value(board, who='x'):\n    \"\"\"Returns the value of a board\n    >>> b = Board(); b._rows = [['x', 'x', 'x'], ['x', 'x', 'x'], ['x', 'x', 'x']]\n    >>> value(b)\n    1\n    >>> b = Board(); b._rows = [['o', 'o', 'o'], ['o', 'o', 'o'], ['o', 'o', 'o']]\n    >>> value(b)\n    -1\n    >>> b = Board(); b._rows = [['x', 'o', ' '], ['x', 'o', ' '], [' ', ' ', ' ']]\n    >>> value(b)",
-        "detail": "src.tictactoe",
-        "documentation": {}
-    },
-    {
-        "label": "ai",
-        "kind": 2,
-        "importPath": "src.tictactoe",
-        "description": "src.tictactoe",
-        "peekOfCode": "def ai(board, who='x'):\n    \"\"\"\n    Returns best next board\n    >>> b = Board(); b._rows = [['x', 'o', ' '], ['x', 'o', ' '], [' ', ' ', ' ']]\n    >>> ai(b)\n    < Board |xo.xo.x..| >\n    \"\"\"\n    return sorted(board.possible(), key=lambda b: value(b, who))[-1]\ndef main():\n    with Input() as input_generator:",
-        "detail": "src.tictactoe",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "src.tictactoe",
-        "description": "src.tictactoe",
-        "peekOfCode": "def main():\n    with Input() as input_generator:\n        with FullscreenWindow() as window:\n            b = Board()\n            while True:\n                # window.render_to_terminal(b.draw_from_matrix())\n                # window.render_to_terminal('blah')\n                print('blah')\n                # for c in input_generator:\n                #     if c == '<ESC>':",
-        "detail": "src.tictactoe",
-        "documentation": {}
-    },
-    {
-        "label": "Toy",
-        "kind": 6,
-        "importPath": "src.toy",
-        "description": "src.toy",
-        "peekOfCode": "class Toy:\n    def __init__(self):\n        pass",
-        "detail": "src.toy",
-        "documentation": {}
-    },
-    {
-        "label": "View",
-        "kind": 6,
-        "importPath": "src.view",
-        "description": "src.view",
-        "peekOfCode": "class View:\n    cmap = [curses.COLOR_BLACK] * 8\n    # cmap[0]= Color.lightGray;\n    # cmap[1]= Color.gray;\n    cmap[2]= curses.COLOR_BLACK\n    cmap[3]= curses.COLOR_WHITE\n    cmap[4]= curses.COLOR_RED\n    cmap[5]= curses.COLOR_YELLOW\n    # cmap[6]= new Color(128,0,0);\t// Dark red\n    cmap[7]= curses.COLOR_GREEN",
-        "detail": "src.view",
+        "importPath": "src.player_model",
+        "description": "src.player_model",
+        "peekOfCode": "class PlayerModel:\n    BITVALUE = 0o02000\n    def __init__(self):\n        self.currentPosition = [2,2]\n        self.name = 'Whistlebritches'\n        self.attributes = Attributes()\n    def getPosition(self):\n        return self.currentPosition\n    def setPosition(self, newPos):\n        self.currentPosition = newPos",
+        "detail": "src.player_model",
         "documentation": {}
     },
     {
