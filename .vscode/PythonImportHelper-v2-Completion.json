@@ -594,6 +594,22 @@
         "documentation": {}
     },
     {
+        "label": "PlayerController",
+        "importPath": "src.player_controller",
+        "description": "src.player_controller",
+        "isExtraImport": true,
+        "detail": "src.player_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerController",
+        "importPath": "src.player_controller",
+        "description": "src.player_controller",
+        "isExtraImport": true,
+        "detail": "src.player_controller",
+        "documentation": {}
+    },
+    {
         "label": "PlayerModel",
         "importPath": "src.player_model",
         "description": "src.player_model",
@@ -639,14 +655,6 @@
         "description": "src.level_model",
         "isExtraImport": true,
         "detail": "src.level_model",
-        "documentation": {}
-    },
-    {
-        "label": "PlayerController",
-        "importPath": "src.player_controller",
-        "description": "src.player_controller",
-        "isExtraImport": true,
-        "detail": "src.player_controller",
         "documentation": {}
     },
     {
@@ -815,7 +823,7 @@
         "kind": 6,
         "importPath": "src.archive.idlist",
         "description": "src.archive.idlist",
-        "peekOfCode": "class IdList:\n    # @staticmethod\n    def __init__(self, mylist, status):\n        self.ids = self.create_id_list(mylist, status)\n    def create_id_list(self, mylist, status):\n        n = len(mylist) / 3\n        i = 0\n        n_int = math.floor(n)\n        ids = []\n        for k in range(n_int):",
+        "peekOfCode": "class IdList:\n    def __init__(self, mylist, status):\n        self.ids = self.create_id_list(mylist, status)\n    def create_id_list(self, mylist, status):\n        n = len(mylist) / 3\n        i = 0\n        n_int = math.floor(n)\n        ids = []\n        for k in range(n_int):\n            # create new id",
         "detail": "src.archive.idlist",
         "documentation": {}
     },
@@ -1013,7 +1021,7 @@
         "kind": 6,
         "importPath": "src.view.level_view",
         "description": "src.view.level_view",
-        "peekOfCode": "class LevelView:\n    @staticmethod\n    def draw_stuff(m):\n        screen = curses.initscr()\n        screen.clear()\n        curses.curs_set(0)\n        counter = 0\n        index = 0\n        row = 0\n        col = 0",
+        "peekOfCode": "class LevelView:\n    def __init__(self, initial_layout, playerController, levelModel):\n        self.layout = initial_layout\n        self.playerController = playerController\n        self.levelModel = levelModel\n    def set_player_pos(self, pos):\n        self.playerPos = pos\n    def render_field(self, stdscr):\n        stdscr.clear()\n        curses.curs_set(0)",
         "detail": "src.view.level_view",
         "documentation": {}
     },
@@ -1033,6 +1041,15 @@
         "description": "src.attributes_model",
         "peekOfCode": "class Attributes:\n    def __init__(self):\n        self.health = 100\n        self.maxHealth = 100\n        self.strength = 10\n        self.defense = 10\n        self.speed = 10\n        self.intelligence = 10\n        self.charisma = 10\n        self.luck = 10",
         "detail": "src.attributes_model",
+        "documentation": {}
+    },
+    {
+        "label": "GameController",
+        "kind": 6,
+        "importPath": "src.game_controller",
+        "description": "src.game_controller",
+        "peekOfCode": "class GameController:\n    def __init__(self, levelModelRef):\n        self.levelModelRef = levelModelRef",
+        "detail": "src.game_controller",
         "documentation": {}
     },
     {

@@ -10,9 +10,6 @@ class PlayerController:
     SW = SOUTH|WEST
     SE = SOUTH|EAST
 
-
-
-
     def __init__(self, modelRef):
         self.modelRef = modelRef
 

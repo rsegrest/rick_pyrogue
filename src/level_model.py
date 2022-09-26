@@ -12,7 +12,8 @@ class LevelModel:
         # playerPos = self.playerModel.getPosition()
         return layout
 
-    def generateTestRoom(self):
+    @staticmethod
+    def generateTestRoom():
         room = [
             [1,1,1,1,1],
             [1,0,0,0,1],
@@ -23,6 +24,7 @@ class LevelModel:
         return room
     
     def placePlayer(self, pos):
+        print('pos: ', pos)
         print('placing player at: ', pos)
         self.layout[pos[0]][pos[1]] = '☻'
         print(self.layout)

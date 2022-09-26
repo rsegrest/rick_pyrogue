@@ -8,7 +8,6 @@ class PlayerModel:
         self.currentPosition = [2,2]
         self.name = 'Whistlebritches'
         self.attributes = Attributes()
-        
 
     def getPosition(self):
         return self.currentPosition

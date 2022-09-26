@@ -2,7 +2,6 @@ import math
 from id import Id
 
 class IdList:
-    # @staticmethod
     def __init__(self, mylist, status):
         self.ids = self.create_id_list(mylist, status)
 
