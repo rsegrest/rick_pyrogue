@@ -586,6 +586,30 @@
         "documentation": {}
     },
     {
+        "label": "Events",
+        "importPath": "events",
+        "description": "events",
+        "isExtraImport": true,
+        "detail": "events",
+        "documentation": {}
+    },
+    {
+        "label": "Events",
+        "importPath": "events",
+        "description": "events",
+        "isExtraImport": true,
+        "detail": "events",
+        "documentation": {}
+    },
+    {
+        "label": "Events",
+        "importPath": "events",
+        "description": "events",
+        "isExtraImport": true,
+        "detail": "events",
+        "documentation": {}
+    },
+    {
         "label": "ASCII_Helper",
         "importPath": "src.ascii_helper",
         "description": "src.ascii_helper",
@@ -594,22 +618,6 @@
         "documentation": {}
     },
     {
-        "label": "PlayerController",
-        "importPath": "src.player_controller",
-        "description": "src.player_controller",
-        "isExtraImport": true,
-        "detail": "src.player_controller",
-        "documentation": {}
-    },
-    {
-        "label": "PlayerController",
-        "importPath": "src.player_controller",
-        "description": "src.player_controller",
-        "isExtraImport": true,
-        "detail": "src.player_controller",
-        "documentation": {}
-    },
-    {
         "label": "PlayerModel",
         "importPath": "src.player_model",
         "description": "src.player_model",
@@ -623,6 +631,30 @@
         "description": "src.player_model",
         "isExtraImport": true,
         "detail": "src.player_model",
+        "documentation": {}
+    },
+    {
+        "label": "InputModel",
+        "importPath": "src.input_model",
+        "description": "src.input_model",
+        "isExtraImport": true,
+        "detail": "src.input_model",
+        "documentation": {}
+    },
+    {
+        "label": "key_event",
+        "importPath": "src.view.level_view",
+        "description": "src.view.level_view",
+        "isExtraImport": true,
+        "detail": "src.view.level_view",
+        "documentation": {}
+    },
+    {
+        "label": "LevelView",
+        "importPath": "src.view.level_view",
+        "description": "src.view.level_view",
+        "isExtraImport": true,
+        "detail": "src.view.level_view",
         "documentation": {}
     },
     {
@@ -658,11 +690,11 @@
         "documentation": {}
     },
     {
-        "label": "LevelView",
-        "importPath": "src.view.level_view",
-        "description": "src.view.level_view",
+        "label": "PlayerController",
+        "importPath": "src.player_controller",
+        "description": "src.player_controller",
         "isExtraImport": true,
-        "detail": "src.view.level_view",
+        "detail": "src.player_controller",
         "documentation": {}
     },
     {
@@ -1021,7 +1053,7 @@
         "kind": 6,
         "importPath": "src.view.level_view",
         "description": "src.view.level_view",
-        "peekOfCode": "class LevelView:\n    def __init__(self, initial_layout, playerController, levelModel):\n        self.layout = initial_layout\n        self.playerController = playerController\n        self.levelModel = levelModel\n    def set_player_pos(self, pos):\n        self.playerPos = pos\n    def render_field(self, stdscr):\n        stdscr.clear()\n        curses.curs_set(0)",
+        "peekOfCode": "class LevelView:\n    def __init__(self, initial_layout):\n        self.events = Events()\n        self.layout = initial_layout\n        self.userInput = []\n    def set_player_pos(self, pos):\n        self.playerPos = pos\n    def get_user_input(self):\n        return self.userInput\n    def consume_user_input(self):",
         "detail": "src.view.level_view",
         "documentation": {}
     },
@@ -1048,8 +1080,17 @@
         "kind": 6,
         "importPath": "src.game_controller",
         "description": "src.game_controller",
-        "peekOfCode": "class GameController:\n    def __init__(self, levelModelRef):\n        self.levelModelRef = levelModelRef",
+        "peekOfCode": "class GameController:\n    # Should there be a game model?\n    def __init__(self, levelModelRef, levelViewRef):\n        self.levelModelRef = levelModelRef\n        self.levelViewRef = levelViewRef",
         "detail": "src.game_controller",
+        "documentation": {}
+    },
+    {
+        "label": "InputModel",
+        "kind": 6,
+        "importPath": "src.input_model",
+        "description": "src.input_model",
+        "peekOfCode": "class InputModel:\n    WEST = 0x01\n    EAST = 0x02\n    NORTH = 0x04\n    SOUTH = 0x08\n    NW = NORTH|WEST\n    NE = NORTH|EAST\n    SW = SOUTH|WEST\n    SE = SOUTH|EAST",
+        "detail": "src.input_model",
         "documentation": {}
     },
     {
@@ -1066,7 +1107,7 @@
         "kind": 6,
         "importPath": "src.player_controller",
         "description": "src.player_controller",
-        "peekOfCode": "class PlayerController:\n    WEST = 0x01\n    EAST = 0x02\n    NORTH = 0x04\n    SOUTH = 0x08\n    NW = NORTH|WEST\n    NE = NORTH|EAST\n    SW = SOUTH|WEST\n    SE = SOUTH|EAST\n    def __init__(self, modelRef):",
+        "peekOfCode": "class PlayerController:\n    def __init__(self, modelRef, viewRef):\n        self.modelRef = modelRef\n        self.viewRef = viewRef\n        self.events += Events()\n        self.events.on_change += key_event\n    # TEMP\n    def something_changed(self):\n        print('Player Controller: something changed')\n    # def ",
         "detail": "src.player_controller",
         "documentation": {}
     },
@@ -1075,7 +1116,7 @@
         "kind": 6,
         "importPath": "src.player_model",
         "description": "src.player_model",
-        "peekOfCode": "class PlayerModel:\n    BITVALUE = 0o02000\n    def __init__(self):\n        self.currentPosition = [2,2]\n        self.name = 'Whistlebritches'\n        self.attributes = Attributes()\n    def getPosition(self):\n        return self.currentPosition\n    def setPosition(self, newPos):\n        self.currentPosition = newPos",
+        "peekOfCode": "class PlayerModel:\n    BITVALUE = 0o02000\n    def __init__(self):\n        self.currentPosition = [2,2]\n        self.name = 'Whistlebritches'\n        self.attributes = Attributes()\n    # CRUD operations in a model\n    # \"Read\"\n    def getPosition(self):\n        return self.currentPosition",
         "detail": "src.player_model",
         "documentation": {}
     },

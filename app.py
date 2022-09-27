@@ -3,6 +3,7 @@ from src.level_model import LevelModel
 from src.player_model import PlayerModel
 from src.player_controller import PlayerController
 from src.view.level_view import LevelView
+from events import Events
 
 if __name__=='__main__':
     levelModel = LevelModel()

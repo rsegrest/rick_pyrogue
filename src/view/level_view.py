@@ -1,16 +1,27 @@
 import curses
+from events import Events
 from src.ascii_helper import ASCII_Helper as ascii
-from src.player_controller import PlayerController
-# wrapper
+
 
 class LevelView:
-    def __init__(self, initial_layout, playerController, levelModel):
+    def __init__(self, initial_layout):
+        self.events = Events()
         self.layout = initial_layout
-        self.playerController = playerController
-        self.levelModel = levelModel
+        self.userInput = []
 
     def set_player_pos(self, pos):
         self.playerPos = pos
+
+    def get_user_input(self):
+        return self.userInput
+
+    def consume_user_input(self):
+        input = self.userInput
+        self.userInput = []
+        return input
+
+    def clear_user_input(self):
+        self.userInput = []
 
     def render_field(self, stdscr):
         stdscr.clear()
@@ -41,6 +52,10 @@ class LevelView:
         # Changes go in to the screen buffer and only get
         # displayed after calling `refresh()` to update
         stdscr.refresh()
+    
+    def key_event(key):
+        print("the key %s was pressed" % key)
+        return key
 
     def draw_stuff(self, stdscr):
         # screen = curses.initscr()
@@ -50,19 +65,23 @@ class LevelView:
         screen = curses.initscr()
         k = screen.getch()
 
+        # TODO: View should just record key presses, and create signals for the controller
         # TODO: Key is being processed multiple times, fix this
         while (k != ord('q')):
             if k == curses.KEY_DOWN:
-                self.playerController.move(PlayerController.SOUTH)
+                # self.playerController.move(PlayerController.SOUTH)
+                self.userInput = [curses.KEY_DOWN]
+                self.events.key_event(curses.KEY_DOWN)
             elif k == curses.KEY_UP:
-                self.playerController.move(PlayerController.NORTH)
+                self.playerController = [curses.KEY_UP]
+                self.events.key_event(curses.KEY_UP)
             elif k == curses.KEY_RIGHT:
-                self.playerController.move(PlayerController.EAST)
+                self.playerController = [curses.KEY_RIGHT]
+                self.events.key_event(curses.KEY_RIGHT)
             elif k == curses.KEY_LEFT:
-                self.playerController.move(PlayerController.WEST)
-            self.levelModel.update()
-            # levelView.set_player_pos(levelModel.playerModel.getPosition())
-            # curses.wrapper(levelView.draw_stuff)
+                self.playerController = [curses.KEY_LEFT]
+                self.events.key_event(curses.KEY_LEFT)
+            # self.levelModel.update() # move this to the controller
+
             screen.refresh()
-        #     k = screen.getch()
 

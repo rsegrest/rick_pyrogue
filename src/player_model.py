@@ -9,9 +9,12 @@ class PlayerModel:
         self.name = 'Whistlebritches'
         self.attributes = Attributes()
 
+    # CRUD operations in a model
+    # "Read"
     def getPosition(self):
         return self.currentPosition
-    
+
+    # "Update"
     def setPosition(self, newPos):
         self.currentPosition = newPos
     
