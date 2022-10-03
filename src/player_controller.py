@@ -1,15 +1,14 @@
 from src.input_model import InputModel
 from events import Events
-from src.view.level_view import key_event
+from src.view.level_view import LevelView
 class PlayerController:
 
     def __init__(self, modelRef, viewRef):
         self.modelRef = modelRef
         self.viewRef = viewRef
-        self.events += Events()
-        self.events.on_change += key_event
+        self.events = Events()
+        self.events.on_change += LevelView.key_event
 
-    # TEMP
     def something_changed(self):
         print('Player Controller: something changed')
     

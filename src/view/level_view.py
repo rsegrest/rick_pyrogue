@@ -8,6 +8,7 @@ class LevelView:
         self.events = Events()
         self.layout = initial_layout
         self.userInput = []
+        self.playerPos = []
 
     def set_player_pos(self, pos):
         self.playerPos = pos
@@ -47,12 +48,14 @@ class LevelView:
                 col += 1
             row += 1
             col = 0
-        stdscr.addstr((row),0,'Player pos: '+str(self.playerController.modelRef.getPosition())) # str(counter))
+        # Controller should set player position
+        # stdscr.addstr((row),0,'Player pos: '+str(self.playerController.modelRef.getPosition())) # str(counter))
         row = 0
         # Changes go in to the screen buffer and only get
         # displayed after calling `refresh()` to update
         stdscr.refresh()
     
+    @staticmethod
     def key_event(key):
         print("the key %s was pressed" % key)
         return key

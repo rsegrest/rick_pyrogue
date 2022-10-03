@@ -642,7 +642,7 @@
         "documentation": {}
     },
     {
-        "label": "key_event",
+        "label": "LevelView",
         "importPath": "src.view.level_view",
         "description": "src.view.level_view",
         "isExtraImport": true,
@@ -1053,7 +1053,7 @@
         "kind": 6,
         "importPath": "src.view.level_view",
         "description": "src.view.level_view",
-        "peekOfCode": "class LevelView:\n    def __init__(self, initial_layout):\n        self.events = Events()\n        self.layout = initial_layout\n        self.userInput = []\n    def set_player_pos(self, pos):\n        self.playerPos = pos\n    def get_user_input(self):\n        return self.userInput\n    def consume_user_input(self):",
+        "peekOfCode": "class LevelView:\n    def __init__(self, initial_layout):\n        self.events = Events()\n        self.layout = initial_layout\n        self.userInput = []\n        self.playerPos = []\n    def set_player_pos(self, pos):\n        self.playerPos = pos\n    def get_user_input(self):\n        return self.userInput",
         "detail": "src.view.level_view",
         "documentation": {}
     },
@@ -1107,7 +1107,7 @@
         "kind": 6,
         "importPath": "src.player_controller",
         "description": "src.player_controller",
-        "peekOfCode": "class PlayerController:\n    def __init__(self, modelRef, viewRef):\n        self.modelRef = modelRef\n        self.viewRef = viewRef\n        self.events += Events()\n        self.events.on_change += key_event\n    # TEMP\n    def something_changed(self):\n        print('Player Controller: something changed')\n    # def ",
+        "peekOfCode": "class PlayerController:\n    def __init__(self, modelRef, viewRef):\n        self.modelRef = modelRef\n        self.viewRef = viewRef\n        self.events = Events()\n        self.events.on_change += LevelView.key_event\n    def something_changed(self):\n        print('Player Controller: something changed')\n    # def \n    def move(self, direction):",
         "detail": "src.player_controller",
         "documentation": {}
     },
